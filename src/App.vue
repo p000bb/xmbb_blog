@@ -87,7 +87,7 @@
 				this.$router.push(item.url)
 			},
 			getIP(){
-				this.$api.post("api?s=Ext.IP.GetInfo").then((resp) => {
+				this.$api.post("?s=Ext.IP.GetInfo").then((resp) => {
 					localStorage.setItem('ip', resp.data.data.data.ip)
 				})
 			}

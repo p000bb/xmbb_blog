@@ -37,7 +37,7 @@
 		},
 		methods: {
 			getData(){
-				this.$api.post('api?s=App.Table.FreeQuery', {
+				this.$api.post('?s=App.Table.FreeQuery', {
 					model_name: 'life',
 					where: '[["id", ">", "0"]]',
 					page: this.page,
@@ -51,7 +51,7 @@
 			},
 			keywordSearch(){
 				// this.page = 1
-				this.$api.post('api?s=App.Table.FreeQuery', {
+				this.$api.post('?s=App.Table.FreeQuery', {
 					model_name: 'life',
 					page: this.page,
 					perpage: 10,

@@ -3,7 +3,7 @@ import qs from 'qs'
 
 
 axios.defaults.timeout = 20000; //响应时间
-// axios.defaults.baseURL = "http://hn216.api.yesapi.cn/"; 
+axios.defaults.baseURL = "https://hn216.api.yesapi.cn/"; 
 // axios.defaults.baseURL = "https://aip.baidubce.com"; 
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'; //配置请求头
 

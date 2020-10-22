@@ -39,7 +39,7 @@
 		},
 		methods: {
 			getList() {
-				this.$api.post("api?s=App.Table.FreeQuery", {
+				this.$api.post("?s=App.Table.FreeQuery", {
 					model_name: "blog",
 					where: '[["id", ">", "1"]]',
 					

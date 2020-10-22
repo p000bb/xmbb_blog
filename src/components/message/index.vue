@@ -89,7 +89,7 @@
 					content: option.data.textarea,
 					nickname: option.data.nickname,
 				}
-				this.$api.post('api?s=App.Table.Create', {
+				this.$api.post('?s=App.Table.Create', {
 					model_name: 'message',
 					data: JSON.stringify(list),
 				}).then(() => {
@@ -116,7 +116,7 @@
 					pid:this.user.id,
 					pname:this.user.nickname
 				}]
-				this.$api.post('api?s=App.Table.Update', {
+				this.$api.post('?s=App.Table.Update', {
 					model_name: 'message',
 					id:this.user.id,
 					data_son:list,
@@ -134,7 +134,7 @@
 			},
 			//	获取留言数据
 			getMessage() {
-				this.$api.post('api?s=App.Table.FreeQuery', {
+				this.$api.post('?s=App.Table.FreeQuery', {
 					model_name: 'message',
 					where: '[["id", ">", "0"]]',
 					page: this.page,
@@ -154,7 +154,7 @@
 			},
 			//	关键字搜索
 			keywordSearch() {
-				this.$api.post('api?s=App.Table.FreeQuery', {
+				this.$api.post('?s=App.Table.FreeQuery', {
 					model_name: 'message',
 					page: 1,
 					perpage: 10,
