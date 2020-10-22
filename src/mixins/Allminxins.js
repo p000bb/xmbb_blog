@@ -9,7 +9,9 @@ export default{
 	},
 	methods:{
 		load(callback){
-			if (this.total / 10 < this.page) return
+			console.log(this.total)
+			console.log(this.page)
+			if (this.total / 10 <= this.page) return
 			this.page++
 			callback&&callback()
 		},

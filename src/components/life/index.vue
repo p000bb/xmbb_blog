@@ -41,7 +41,8 @@
 					model_name: 'life',
 					where: '[["id", ">", "0"]]',
 					page: this.page,
-					perpage: 10
+					perpage: 10,
+					order:["id DESC"]
 				}).then((resp) => {
 					this.total = resp.data.data.total
 					resp.data.data.list.forEach((item) => {
