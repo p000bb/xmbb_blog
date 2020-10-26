@@ -4,6 +4,7 @@ module.exports = {
 	markdown: {
 		lineNumbers: true // 代码行号
 	},
+	base:process.env.NODE_ENV === 'production'?'/xmbb_blog/':'/',
 	theme: 'reco',
 	themeConfig: {
 		logo: 'http://cd7.yesapi.net/96B4B5059E3DB099C78FFA6E90182B33_20200529161747_0d862bd287f406b0f5d01fd62c54ddd8.jpg',
@@ -17,12 +18,12 @@ module.exports = {
 		lastUpdated: '上次更新', //	更新时间
 		repo: 'p000bb/xmbb_blog', // 导航栏右侧生成Github链接
 		vssueConfig: { //	评论栏配置
-			platform: 'github',
-			owner: 'OWNER_OF_REPO',
-			repo: 'NAME_OF_REPO',
-			clientId: 'YOUR_CLIENT_ID',
-			clientSecret: 'YOUR_CLIENT_SECRET',
-			showComment: false
+			platform: 'gitee',
+			owner: 'xiong_ying001',
+			repo: 'xmbb_blog',
+			clientId: '1a5421591bd00c4ff449dcda281ff4289ea918463b07b718a15c5384a163a5b0',
+			clientSecret: 'af039040df3fed9c2a85e72ee89344f9e345e7987173b66dd523098fbe3c5104',
+			// showComment: false
 		},
 		blogConfig: {
 		}
@@ -30,11 +31,19 @@ module.exports = {
 	plugins: [
 		['@vuepress-reco/vuepress-plugin-kan-ban-niang', {
 			messages: {
-				welcome: '欢迎来到熊猫宝宝的博客',
 				home: '大爷快来玩啊',
 				theme: '别把兄弟',
 				close: '你知道我喜欢吃什么吗？痴痴地望着你。'
-			}
+			},
+			 // modelStyle:{
+				//  left:'100px',
+				//  bottom: '0px',
+				//  opacity: '0.9'
+			 // },
+			 // btnStyle:{
+				//   left: '90px',
+				//   bottom: '40px',
+			 // }
 		}],
 	]
 }

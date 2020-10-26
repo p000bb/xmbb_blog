@@ -3,6 +3,11 @@ module.exports = [{
 		link: '/'
 	},
 	{
+		text: '前端文章',
+		link: '/web/',
+		icon: 'reco-date'
+	},
+	{
 		text: '时间轴',
 		link: '/timeline/',
 		icon: 'reco-date'

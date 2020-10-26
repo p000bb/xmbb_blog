@@ -1,6 +1,8 @@
 <template>
 	<div>
-		<h3>有什么想对我说的吗，留下你的评论吧</h3>
+		<h3 class="title">留言板</h3>
+		<Content slot-key="tip"/>
+		<p>各位看客老爷们留言吧，求求了🙏🙏🙏</p>
 	</div>
 </template>
 
@@ -16,5 +18,12 @@
 	}
 </script>
 
-<style>
+<style scoped>
+	.title{
+		position: relative;
+		padding-left: 0.8rem;
+		font-size: 1.4rem;
+		font-weight: 500;
+		line-height: 1.25;
+	}
 </style>
