@@ -6,12 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+	 "deploy": "bash deploy.sh"
   },
   "author": "熊猫宝宝",
   "license": "ISC",
   "devDependencies": {
     "vuepress": "^1.7.1",
+    "vuepress-plugin-permalink-pinyin": "^1.0.0",
     "vuepress-theme-reco": "^1.5.7"
   },
   "dependencies": {
