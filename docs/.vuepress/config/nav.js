@@ -5,7 +5,7 @@ module.exports = [{
 	{
 		text: '前端文章',
 		link: '/web/',
-		icon: 'reco-date'
+		icon: 'reco-document'
 	},
 	{
 		text: '时间轴',
