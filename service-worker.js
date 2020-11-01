@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "ee783d8f2c8f95c07b32ab443fdfe84a"
+    "revision": "128ea6ba33e9defd434393ea599fc710"
   },
   {
     "url": "assets/css/0.styles.32d1343e.css",
@@ -154,52 +154,52 @@ self.__precacheManifest = [
     "revision": "669d82fc099bf319839885da26f799cc"
   },
   {
-    "url": "assets/js/app.de506651.js",
-    "revision": "02d965abd0fa9680ae66b2424b9d20fc"
+    "url": "assets/js/app.b94ec1c4.js",
+    "revision": "e0551f185f1fa48440a8a6600e49974e"
   },
   {
     "url": "categories/index.html",
-    "revision": "b73237f9be936e2ff38c486c6284b305"
+    "revision": "e563b2f6fb3d497a6df645e9f99df342"
   },
   {
     "url": "categories/js/index.html",
-    "revision": "745aa133b5184fcbfa37835db4ab3ec7"
+    "revision": "2db8aafbbafd8a856810399e33ae38e7"
   },
   {
     "url": "categories/Markdown语法/index.html",
-    "revision": "ddf6728373d76308cbd602bc47c10970"
+    "revision": "c9b46b6c282df764deeb0a5ad8c46658"
   },
   {
     "url": "categories/前端/index.html",
-    "revision": "06bc6f2a62dcbe77df7be94c5c0bad18"
+    "revision": "e7e0d53b50ca67d7be62dd227a5c3a6d"
   },
   {
     "url": "categories/本站搭建/index.html",
-    "revision": "00213ada936dd25e6f856b4831d88de7"
+    "revision": "93d5767ce38e82bf7b29c4e8b49eef8c"
   },
   {
     "url": "categories/笔记/index.html",
-    "revision": "a68216c4b04e19f94d17db7e00452728"
+    "revision": "50eca09e7fb61d8eee7017cbf66a13b0"
   },
   {
     "url": "ce-shi-yi-xia/ce-shi-shi-jian-zhou---fu-ben-2-.html",
-    "revision": "04fb1118f3dbeccc339b60008eccd650"
+    "revision": "aefd1739fd9b79dd4eb8c7f56cf3c36a"
   },
   {
     "url": "ce-shi-yi-xia/ce-shi-shi-jian-zhou---fu-ben-3-.html",
-    "revision": "f2b8024af634139bbcdd82701e3be6fa"
+    "revision": "a17ee4c68d638ca3188d02141da0388d"
   },
   {
     "url": "ce-shi-yi-xia/ce-shi-shi-jian-zhou---fu-ben.html",
-    "revision": "d59c4abfaf825e3766115ae6b22e0cd6"
+    "revision": "5222a5950052f6351213c91dc615bbd7"
   },
   {
     "url": "ce-shi-yi-xia/ce-shi-shi-jian-zhou.html",
-    "revision": "6da7b2cf769a4e47dcbd3cfde2f72c5f"
+    "revision": "455a191a2353314e4ae3fcb731a7a4e1"
   },
   {
     "url": "gametime/index.html",
-    "revision": "316ddbdf61d33997b76c2bdf8df90c2b"
+    "revision": "f06fdea6a41cd617134c81b73a2391c9"
   },
   {
     "url": "home.jpg",
@@ -207,75 +207,75 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "3dae1f1e8a00aa1a6eba747bacff4fca"
+    "revision": "eb07b2b626a0b0cd38e9803fa9b283d7"
   },
   {
     "url": "message/index.html",
-    "revision": "bfcda0aeef02ce2dc8a4a38a297e3044"
+    "revision": "9f5f6258a5bd13bb301acaf33197dee2"
   },
   {
     "url": "movietime/index.html",
-    "revision": "8c71f10380d70d5cdb9baba0ad7335ba"
+    "revision": "a466f2e12b83d861c3f4be0ecf3bbe3e"
   },
   {
     "url": "my/index.html",
-    "revision": "209e6f9d89394332c5d530097a967607"
+    "revision": "8c112c8129f90d9b09770c21fc2cd932"
   },
   {
     "url": "my/markdown-yu-fa/markdwn-yu-fa.html",
-    "revision": "da2236ce918ec4d0354e2af3524cf930"
+    "revision": "9f802b0438a4061ce88b55b7137a14fb"
   },
   {
     "url": "my/qian-duan/ru-he-jie-jue-tu-pian-jia-zai-shi-bai-de-wen-ti.html",
-    "revision": "558fcad77aaeb3902b740b8803ce5c6d"
+    "revision": "b476a07f8db4e422608181cced47a4b9"
   },
   {
     "url": "mylife/index.html",
-    "revision": "0910e061bf09ddb70d23d78427e5078d"
+    "revision": "5a98a48b1824a85b78fe015e77e450ca"
   },
   {
     "url": "tag/index.html",
-    "revision": "ba203a8a4179e1f8f872afd123484a22"
+    "revision": "0a4edb87be0012c067eac31b3598b45b"
   },
   {
     "url": "tag/js/index.html",
-    "revision": "0b1e5ab9b5b04999e428c6463ff2d4b6"
+    "revision": "77a97c62c537497a6efa7fbef501e888"
   },
   {
     "url": "tag/Vue/index.html",
-    "revision": "7648b19a7496e6142c2c9c6a242f0a48"
+    "revision": "f6dfefabe742c29baf3b410b4378b5a5"
   },
   {
     "url": "tag/原创/index.html",
-    "revision": "eed2aa9a92c3b61fba10a4c0ac7650d6"
+    "revision": "6789daabd7ec560bd130943a1b213297"
   },
   {
     "url": "tag/小知识/index.html",
-    "revision": "afcbe7d5f36c40a4d7644ab103f44f0f"
+    "revision": "4f4bee593a82a96d1b1094205885396e"
   },
   {
     "url": "tag/语法/index.html",
-    "revision": "d12ec424d9e1ca197f01eb35fe7f4a59"
+    "revision": "587274873697a76f88f0a258f94463f5"
   },
   {
     "url": "tag/转载/index.html",
-    "revision": "b5d6c6798a6f8fb53d0892bd82b3f803"
+    "revision": "82f23eb4af818c74de0f8a9cf1d68e1b"
   },
   {
     "url": "timeline/index.html",
-    "revision": "9ef81cfccfeb092354d9cfeac811b461"
+    "revision": "69be907083af03ae168138df0432ed6e"
   },
   {
     "url": "web/index.html",
-    "revision": "9021d84f3e2a3c3315edc5313e8fa2f1"
+    "revision": "71f2f334684fe4cbe34c33f0fd0bc6bd"
   },
   {
     "url": "zhuan-zai/js-shi-xian-wu-xian-ceng-ji-shu-xing-shu-ju-jie-gou.html",
-    "revision": "5a818d6fa51baba6c3e21133908f36c6"
+    "revision": "d93539cf3edbf972e40e5173b75f751a"
   },
   {
     "url": "zhuan-zai/vue-zu-jian.html",
-    "revision": "231c9fa16d5e1e688bd360b599198114"
+    "revision": "16c914672a464521fedb107789b78fe6"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
