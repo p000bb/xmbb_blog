@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d237d4f"],{fd94:function(t,n,e){"use strict";e.r(n);var o=function(){var t=this,n=t.$createElement,e=t._self._c||n;return e("div")},u=[],c={components:{},data:function(){return{}},computed:{},created:function(){this.$api.post("/douban/v2/movie/top250",{start:0,count:999},"douban")},methods:{}},a=c,d=e("9ca4"),s=Object(d["a"])(a,o,u,!1,null,null,null);n["default"]=s.exports}}]);
-//# sourceMappingURL=chunk-2d237d4f.921347a0.js.map
