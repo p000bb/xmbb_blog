@@ -1,19 +1,22 @@
 const nav = require('./config/nav.js');
+const sidebar = require('./config/sidebar.js');
 module.exports = {
 	title: '熊猫宝宝',
+	description: '欢迎来到90后快乐肥宅熊猫宝宝的个人博客😄😄😄',
 	markdown: {
 		lineNumbers: true // 代码行号
 	},
-	base:process.env.NODE_ENV === 'production'?'/xmbb_blog/':'/',
+	base: process.env.NODE_ENV === 'production' ? '/xmbb_blog/' : '/',
 	theme: 'reco',
 	themeConfig: {
 		logo: 'http://cd7.yesapi.net/96B4B5059E3DB099C78FFA6E90182B33_20200529161747_0d862bd287f406b0f5d01fd62c54ddd8.jpg',
 		nav,
-		subSidebar: 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
+		sidebar,
+		subSidebar: 'auto', //在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
 		type: 'blog', //	主题类别
 		author: '熊猫宝宝',
 		postList: "detailed",
-		smoothScroll: true,	// 页面滚动
+		smoothScroll: true, // 页面滚动
 		authorAvatar: 'http://cd7.yesapi.net/96B4B5059E3DB099C78FFA6E90182B33_20200529161747_0d862bd287f406b0f5d01fd62c54ddd8.jpg',
 		lastUpdated: '上次更新', //	更新时间
 		repo: 'p000bb/xmbb_blog', // 导航栏右侧生成Github链接
@@ -26,15 +29,15 @@ module.exports = {
 			// showComment: false
 		},
 		blogConfig: {
-		      category: {
-		        location: 2,     // 在导航栏菜单中所占的位置，默认2
-		        text: '分类' // 默认文案 “分类”
-		      },
-		      tag: {
-		        location: 3,     // 在导航栏菜单中所占的位置，默认3
-		        text: '标签'      // 默认文案 “标签”
-		      }
-		    }
+			category: {
+				location: 2, // 在导航栏菜单中所占的位置，默认2
+				text: '分类' // 默认文案 “分类”
+			},
+			tag: {
+				location: 3, // 在导航栏菜单中所占的位置，默认3
+				text: '标签' // 默认文案 “标签”
+			}
+		}
 	},
 	plugins: [
 		['@vuepress-reco/vuepress-plugin-kan-ban-niang', {
@@ -43,19 +46,35 @@ module.exports = {
 				theme: '别把兄弟',
 				close: '你知道我喜欢吃什么吗？痴痴地望着你。'
 			},
-			 // modelStyle:{
-				//  left:'100px',
-				//  bottom: '0px',
-				//  opacity: '0.9'
-			 // },
-			 // btnStyle:{
-				//   left: '90px',
-				//   bottom: '40px',
-			 // }
+			// modelStyle:{
+			//  left:'100px',
+			//  bottom: '0px',
+			//  opacity: '0.9'
+			// },
+			// btnStyle:{
+			//   left: '90px',
+			//   bottom: '40px',
+			// }
 		}],
-		['permalink-pinyin',{
-			 lowercase: true,
-			 separator: '-' 
-		}]
+		['permalink-pinyin', {
+			lowercase: true,
+			separator: '-'
+		}],
+		['@vuepress/medium-zoom', {
+			selector: 'img.zoom-custom-imgs',
+			options: {
+				margin: 16
+			}
+		}],
+		[
+			'@vuepress/pwa',
+			{
+				serviceWorker: true,
+				updatePopup: {
+					message: "发现新内容可用",
+					buttonText: "刷新"
+				}
+			}
+		]
 	]
 }
