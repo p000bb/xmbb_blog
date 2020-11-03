@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "1e84de9761a4bb4d20fb2efd4a3d3245"
+    "revision": "85bb5b88a77cbc7f94560863398e9d14"
   },
   {
-    "url": "assets/css/0.styles.32d1343e.css",
-    "revision": "fe52e4e29a70074e94af3624f7cb9f69"
+    "url": "assets/css/0.styles.145db4a4.css",
+    "revision": "b765ed0fa92967e05469fe3cac251d43"
   },
   {
     "url": "assets/img/bg.2cfdbb33.svg",
@@ -46,7 +46,7 @@ self.__precacheManifest = [
     "revision": "2a40145fd3a14660f63eeeff7bf37d81"
   },
   {
-    "url": "assets/js/1.9199ae9d.js",
+    "url": "assets/js/1.4aa6cefb.js",
     "revision": "654aeadf1650448e2ce25c9e4df3b0e3"
   },
   {
@@ -110,15 +110,15 @@ self.__precacheManifest = [
     "revision": "3acd342cf93460fd1b8b2c136de690e1"
   },
   {
-    "url": "assets/js/3.6f9a478f.js",
+    "url": "assets/js/3.59a5ed13.js",
     "revision": "3e97c36afbbaf5db9df16c2114abbdd6"
   },
   {
-    "url": "assets/js/4.5dcb4ad9.js",
+    "url": "assets/js/4.3bae252c.js",
     "revision": "85b81ef64ca3f7a6a7a03b1352190741"
   },
   {
-    "url": "assets/js/5.0ae972c9.js",
+    "url": "assets/js/5.e3c6653b.js",
     "revision": "ad0e822df2c2d0fd68ca4f9243974b9f"
   },
   {
@@ -138,40 +138,40 @@ self.__precacheManifest = [
     "revision": "669d82fc099bf319839885da26f799cc"
   },
   {
-    "url": "assets/js/app.8ce92a12.js",
-    "revision": "478ed8e856013e562818940f69fe8b03"
+    "url": "assets/js/app.8f932f26.js",
+    "revision": "2a3821996a86c4d373c3f31cefcf50a7"
   },
   {
     "url": "categories/index.html",
-    "revision": "c3796fb44f74b0f8d4d21de25d2413ac"
+    "revision": "6237773e6769cbbcc4c32bed5d01412c"
   },
   {
     "url": "categories/js/index.html",
-    "revision": "488c9fa46d58bde6d663a611ad8e5511"
+    "revision": "a3e5f754beb65ef77eeca73f8022246d"
   },
   {
     "url": "categories/Markdown语法/index.html",
-    "revision": "1f63fd961c5a9a808fc0cf918ba2897d"
+    "revision": "1ab9b230d32abe950210ca91357e08c8"
   },
   {
     "url": "categories/vuepress/index.html",
-    "revision": "e2ea068bea725261eaccaab1d6d2c77b"
+    "revision": "952dc67c065fe2e50f0de211e07b9fbf"
   },
   {
     "url": "categories/前端/index.html",
-    "revision": "f3bf0c53b7b1f7261204790ee3a5c4dd"
+    "revision": "5f9366ac1a7357ed0d1d32319aa74120"
   },
   {
     "url": "categories/笔记/index.html",
-    "revision": "80c161f8da2d329a0ede074e446bd1e9"
+    "revision": "cc854e239900ba454a0331ed12c02d4e"
   },
   {
     "url": "categories/自动化部署/index.html",
-    "revision": "ae0d0af3e2e5c02b5424de067c536fbd"
+    "revision": "039a955505d1f05e755fa2a977e6c1b9"
   },
   {
     "url": "gametime/index.html",
-    "revision": "04bfb31a6a81c7a7a7b88cdeb8d4d632"
+    "revision": "65f7b0d706ac1e5e32c7f0c89dc9e4b6"
   },
   {
     "url": "home.jpg",
@@ -179,79 +179,79 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "7764c5288e67a597d07d7982f30751f9"
+    "revision": "49c3ebec1b9cbac5ace76348e5922104"
   },
   {
     "url": "message/index.html",
-    "revision": "d30067646ba7784bed4dfa02a4535784"
+    "revision": "cb4a69b574e64f1c28583ebfc914bf6f"
   },
   {
     "url": "movietime/index.html",
-    "revision": "3ef821e9eb4bf449fdfe4fa1f980b276"
+    "revision": "3adea99e2f18a2fb91bff96d4777189a"
   },
   {
     "url": "my/markdown-yu-fa/markdwn-yu-fa.html",
-    "revision": "fcafa1d3608faf7184fcbefef5f85e13"
+    "revision": "a9d2000796e698e87b801fa0671ceb35"
   },
   {
     "url": "my/qian-duan/ru-he-jie-jue-tu-pian-jia-zai-shi-bai-de-wen-ti.html",
-    "revision": "643aac749a35c78ed13bf537fbaae4f8"
+    "revision": "0e7bbca13608274335f60ead7336fc58"
   },
   {
     "url": "my/xiang-mu-da-jian/ben-zhan-da-jian.html",
-    "revision": "46e489445fec7907fe4b8a8c359202ca"
+    "revision": "ea7d1f0e3782b1341cf1fefd5817e762"
   },
   {
     "url": "mylife/index.html",
-    "revision": "e2c59a7de9dffa2588f91035b48213fc"
+    "revision": "f11c430d21b3a22db99fdddc70030d92"
   },
   {
     "url": "tag/index.html",
-    "revision": "6dac3b1f6ebf5f8b58e677b46e7a6e74"
+    "revision": "0e45d28db005af584c3d1211e9004e18"
   },
   {
     "url": "tag/js/index.html",
-    "revision": "6317fa16b6a147d392de4596d5e7e16b"
+    "revision": "8d2bdc9f6d1c45f22f85d190d76a386a"
   },
   {
     "url": "tag/Vue/index.html",
-    "revision": "7bc5e857901de5c89cc8b53b1f4b5cfe"
+    "revision": "c8b4b9145a8e22b9a4818a0d9bc35867"
   },
   {
     "url": "tag/原创/index.html",
-    "revision": "2b1fc3c8bc034ac261f8ab1e932e691a"
+    "revision": "09423ee693f145dd57461f825bf0cb1e"
   },
   {
     "url": "tag/小知识/index.html",
-    "revision": "c212db03faed3fdb1bddb3d55e3b2eb2"
+    "revision": "347e7dafdf6124f235d2e390cff3326b"
   },
   {
     "url": "tag/本站搭建/index.html",
-    "revision": "f4c7d92d9f44fd782ab2fdeb7ea84e81"
+    "revision": "f043d08c3b5884552299a13665e07909"
   },
   {
     "url": "tag/语法/index.html",
-    "revision": "507aa9302a02f894dbf219e0573337be"
+    "revision": "80314c9cbed475b13a9ae3e2cb738866"
   },
   {
     "url": "tag/转载/index.html",
-    "revision": "d4b6f9d24d7446f4cc7a3087d2d96903"
+    "revision": "2a7fdfef3fbffd0561a09bd677ceee60"
   },
   {
     "url": "timeline/index.html",
-    "revision": "85abf74c37b2a55db55ebf60426974db"
+    "revision": "6672b08b2ec0036025baeec8d07dc1ea"
   },
   {
     "url": "web/index.html",
-    "revision": "98eed609981dcce6f5e0f44541af8bdb"
+    "revision": "0ec9527c7689f5aeb019707cfb8734af"
   },
   {
     "url": "zhuan-zai/js-shi-xian-wu-xian-ceng-ji-shu-xing-shu-ju-jie-gou.html",
-    "revision": "9a2d1b2716fe86d10496a90e2c0ab8c1"
+    "revision": "8e72b396c3b91bbf42e8b80577148b3c"
   },
   {
     "url": "zhuan-zai/vue-zu-jian.html",
-    "revision": "8bd15d402c9c42f41691ddd5e7b738e5"
+    "revision": "a845d8e72d9700219c0d360b21c3b0f8"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
