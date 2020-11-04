@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "8dceef91d7c4e830beffad5ddb063ba7"
+    "revision": "bb3e434bf0e400bd4a4803116c72436a"
   },
   {
-    "url": "assets/css/0.styles.32d1343e.css",
-    "revision": "fe52e4e29a70074e94af3624f7cb9f69"
+    "url": "assets/css/0.styles.145db4a4.css",
+    "revision": "b765ed0fa92967e05469fe3cac251d43"
   },
   {
     "url": "assets/img/bg.2cfdbb33.svg",
@@ -158,48 +158,48 @@ self.__precacheManifest = [
     "revision": "669d82fc099bf319839885da26f799cc"
   },
   {
-    "url": "assets/js/app.6c5aacc4.js",
-    "revision": "2838a31e81cf765b10a69db8b4f0ff3f"
+    "url": "assets/js/app.8db603cb.js",
+    "revision": "a46eb404264d71fc71cb458e1a728690"
   },
   {
     "url": "categories/index.html",
-    "revision": "3749eb6367d2399e90876a6605a9e074"
+    "revision": "50edf643b9ff0c698d3f4e799e4a36af"
   },
   {
     "url": "categories/js/index.html",
-    "revision": "c184a4d4ed14e395fe841e386bf9b3e8"
+    "revision": "b8d4d44a0df7d4aabfdb5c0e149b91dd"
   },
   {
     "url": "categories/Markdown语法/index.html",
-    "revision": "2b1aa570fc8e22e0ab11989e61d26a43"
+    "revision": "6355eed130a631ddb7e91216ae84274a"
   },
   {
     "url": "categories/vuepress/index.html",
-    "revision": "0e613d2554d16232d7ccb5158a43e6f4"
+    "revision": "ed153ad7e2ceed2078427d3abbc07815"
   },
   {
     "url": "categories/前端/index.html",
-    "revision": "0c3c18f9be507bf148d9f04f514bae63"
+    "revision": "44c6d31889ef19c4a699e24b40b33993"
   },
   {
     "url": "categories/实时直播/index.html",
-    "revision": "37a1518d8d19168047d4f243e2edaa38"
+    "revision": "eb3d21e68f7c124502faf93a862367d6"
   },
   {
     "url": "categories/笔记/index.html",
-    "revision": "f349a825a04f0636e715cdf1af646115"
+    "revision": "1bd31adb187866e3e67840a1eaaff2a0"
   },
   {
     "url": "categories/自动化部署/index.html",
-    "revision": "583f637e85ed2369f59a50502c6e92a1"
+    "revision": "ad3873cd67e2be7c5682bd0221a47492"
   },
   {
     "url": "categories/转载/index.html",
-    "revision": "e23cbbf2ff6b01d0eda0a19d6d863f84"
+    "revision": "c5de903b48f66c6f7812cc6961f93e11"
   },
   {
     "url": "gametime/index.html",
-    "revision": "5211918f91ece749898764ee94ec4a8c"
+    "revision": "acbedd036e5ce5e963d4c8111b41374f"
   },
   {
     "url": "home.jpg",
@@ -207,95 +207,95 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "411e7cfdaa97d6eeb741f94684e336d9"
+    "revision": "5708d8fadefb4540fd1530ee6fe2ebe6"
   },
   {
     "url": "message/index.html",
-    "revision": "efc6b2d6552552cd4ad1a977aab06f91"
+    "revision": "69d53b7866b5d0ba2b1496605da701be"
   },
   {
     "url": "movietime/index.html",
-    "revision": "8dd24fb08f4bb8ca4d1e7636c1f89185"
+    "revision": "392bcecdc802affffb99267e41813db0"
   },
   {
     "url": "my/markdown-yu-fa/markdwn-yu-fa.html",
-    "revision": "ee865fb37b252e7247d84ac7093cace2"
+    "revision": "bd6b16033ba230c41d9888c39c2658e3"
   },
   {
     "url": "my/qian-duan/ru-he-jie-jue-tu-pian-jia-zai-shi-bai-de-wen-ti.html",
-    "revision": "ccf3c0324ef1ba226e4910a7da399386"
+    "revision": "4cf20c39ed743916ba41016f43aa3c4a"
   },
   {
     "url": "my/qian-duan/shi-yongflv.js-obs-node-media-server-shi-shi-zhi-bo.html",
-    "revision": "511d13ce164ae753d940144612be660f"
+    "revision": "f2f7c3741d46a582efc5602bb1de732e"
   },
   {
     "url": "my/xiang-mu-da-jian/ben-zhan-da-jian.html",
-    "revision": "8a96ceb040ee7b2aa163c01b71617c86"
+    "revision": "bfa800b71043ffbd806e6a41210f5c17"
   },
   {
     "url": "mylife/index.html",
-    "revision": "425acec9ebcf3c75706dfea962aa2ca3"
+    "revision": "6e622d6ce3376a2f4c7b377ebeea3d61"
   },
   {
     "url": "tag/flv.js/index.html",
-    "revision": "1260ef34dd5a6652133c6a583cb57c4e"
+    "revision": "20319840d110b73f2d44099c48e79586"
   },
   {
     "url": "tag/index.html",
-    "revision": "f1e5550d1f3fa51973837ac812f07718"
+    "revision": "d4bdb035433e06f6bfea74db0be39a14"
   },
   {
     "url": "tag/js/index.html",
-    "revision": "a625170a10ed4f2e51b24dd02e2124d0"
+    "revision": "943e3a472dcc3979863c32ed28c79989"
   },
   {
     "url": "tag/node-media-server/index.html",
-    "revision": "bde3218aae52741fd94781522397b5ef"
+    "revision": "45d74da0ad217d84686bf04979f169b9"
   },
   {
     "url": "tag/obs/index.html",
-    "revision": "36c8d6f430e02064580542bade952f34"
+    "revision": "0f74346b0dba9b708edde450826910d0"
   },
   {
     "url": "tag/Vue/index.html",
-    "revision": "248784f02f062687ff31b53468d6a88f"
+    "revision": "66a0603d59ea37f39c4477a7e45db7d3"
   },
   {
     "url": "tag/原创/index.html",
-    "revision": "679894742eeec597eb02a9c860e151e7"
+    "revision": "42a3a26c658f88097b14c1887ebde9f4"
   },
   {
     "url": "tag/小知识/index.html",
-    "revision": "a53ecfad708890d75032af35d7a4c565"
+    "revision": "22c83d17a982c98a5d20db5576910be1"
   },
   {
     "url": "tag/本站搭建/index.html",
-    "revision": "05dac35a2b3faa048d1505f4718f9a30"
+    "revision": "b63314d2651940747bf9ba6056d39b8a"
   },
   {
     "url": "tag/语法/index.html",
-    "revision": "fb673b2228f69e30974544d69536a8a7"
+    "revision": "0e4858d49a8b21b62b14083eb243b14e"
   },
   {
     "url": "tag/转载/index.html",
-    "revision": "559776b783586c1984e3732ed78e4e4b"
+    "revision": "5bc4c52771e42bd214c12ac8c96659c4"
   },
   {
     "url": "timeline/index.html",
-    "revision": "89474baf79cef4cb905c35762aa29e86"
+    "revision": "11ae3e0f7d3b43e4d7efd5579a536749"
   },
   {
     "url": "web/index.html",
-    "revision": "94fea0752da435fd1c42c9bf30cdfb1a"
+    "revision": "94989b774cd730f5c93747e63fcdc9b6"
   },
   {
     "url": "zhuan-zai/js-shi-xian-wu-xian-ceng-ji-shu-xing-shu-ju-jie-gou.html",
-    "revision": "37987d2216412ccb8b4069d3ac98fb37"
+    "revision": "43943a05a0d27ec283850a556cf80aea"
   },
   {
     "url": "zhuan-zai/vue-zu-jian.html",
-    "revision": "3c8b5e181e896cdd07debe0ccca5a408"
+    "revision": "d6f1a5e6ec059b7eb0ce1f87cc1f6744"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
