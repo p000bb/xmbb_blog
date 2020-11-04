@@ -6,6 +6,7 @@ module.exports = {
 	markdown: {
 		lineNumbers: true // 代码行号
 	},
+	//	测试
 	head:[
 		['link', { rel: 'icon', href: '/favicon.ico' }],
 	],
