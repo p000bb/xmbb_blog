@@ -93,7 +93,7 @@ module.exports = {
 				height: '2.5rem',
 				'border-radius': '.25rem',
 				'line-height': '2.5rem',
-				backgroundImage: "url('/assets/img/logo.jpg')",
+				backgroundImage: "url('http://cd7.yesapi.net/96B4B5059E3DB099C78FFA6E90182B33_20200529161747_0d862bd287f406b0f5d01fd62c54ddd8.jpg')",
 				backgroundRepeat: "round"
 			}
 		}],
