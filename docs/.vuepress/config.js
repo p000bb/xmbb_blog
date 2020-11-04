@@ -6,8 +6,12 @@ module.exports = {
 	markdown: {
 		lineNumbers: true // 代码行号
 	},
+	head:[
+		['link', { rel: 'icon', href: '/favicon.ico' }],
+	],
 	base: process.env.NODE_ENV === 'production' ? '/xmbb_blog/' : '/',
 	theme: 'reco',
+	permalink: "/:regular",
 	themeConfig: {
 		logo: 'http://cd7.yesapi.net/96B4B5059E3DB099C78FFA6E90182B33_20200529161747_0d862bd287f406b0f5d01fd62c54ddd8.jpg',
 		nav,
@@ -20,6 +24,10 @@ module.exports = {
 		authorAvatar: 'http://cd7.yesapi.net/96B4B5059E3DB099C78FFA6E90182B33_20200529161747_0d862bd287f406b0f5d01fd62c54ddd8.jpg',
 		lastUpdated: '上次更新', //	更新时间
 		repo: 'p000bb/xmbb_blog', // 导航栏右侧生成Github链接
+		docsBranch: 'master',
+		docsDir: 'docs',
+		editLinks: true,
+		editLinkText: '编辑一下！',
 		vssueConfig: { //	评论栏配置
 			platform: 'gitee',
 			owner: 'xiong_ying001',
@@ -56,12 +64,12 @@ module.exports = {
 			//   bottom: '40px',
 			// }
 		}],
-		['permalink-pinyin', {
-			lowercase: true,
-			separator: '-'
-		}],
+		// ['permalink-pinyin', {
+		// 	lowercase: true,
+		// 	separator: '-'
+		// }],
 		['@vuepress/medium-zoom', {
-			selector: 'img.zoom-custom-imgs',
+			selector: '.theme-reco-content :not(a) > img',
 			options: {
 				margin: 16
 			}
