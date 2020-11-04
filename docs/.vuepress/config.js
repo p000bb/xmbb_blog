@@ -9,7 +9,7 @@ module.exports = {
 	head:[
 		['link', { rel: 'icon', href: '/favicon.ico' }],
 	],
-	base: process.env.NODE_ENV === 'production' ? '/xmbb_blog/' : '/',
+	base: process.env.NODE_ENV === 'production' ? '/' : '/',
 	theme: 'reco',
 	permalink: "/:regular",
 	themeConfig: {
