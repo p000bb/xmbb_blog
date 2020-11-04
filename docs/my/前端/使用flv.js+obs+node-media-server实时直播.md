@@ -48,7 +48,7 @@ node index.js
 
 服务成功效果图：
 
-![](/assets/img/使用flv_files/1.jpg)
+<img :src="$withBase('/assets/img/使用flv_files/1.jpg')">
 
 **5. 新建一个index.html**
 
@@ -90,7 +90,7 @@ npm install http-server -g
 ```
 在浏览器中复制图下的地址：
 
-![](/assets/img/使用flv_files/2.jpg)
+<img :src="$withBase('/assets/img/使用flv_files/2.jpg')">
 
 **7. 使用obs进行推流**
 
@@ -100,14 +100,15 @@ npm install http-server -g
 
 配置成下面这张图样的
 串流秘钥为：`hello`(项目的url是http://localhost:8000/live/hello.flv)
-![](/assets/img/使用flv_files/3.jpg)
+<img :src="$withBase('/assets/img/使用flv_files/3.jpg')">
 
 - 然后对obs进行推流
 
 - 最后打开刚刚的链接就可以了
 
 - 如果此时你的obs进行推流，视频里就是显示你正在推流的视频
- ![](/assets/img/使用flv_files/4.jpg)
+
+<img :src="$withBase('/assets/img/使用flv_files/4.jpg')">
  
 
 
