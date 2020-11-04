@@ -1,7 +1,6 @@
 ---
 title: 使用flv.js+obs+node-media-server实时直播
 date: 2020-11-3 18:10:24
-sidebar: false
 categories: 
   - 实时直播
   - 转载
