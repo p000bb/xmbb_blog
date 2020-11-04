@@ -9,18 +9,16 @@ tags:
   - flv.js
   - node-media-server
   - obs
-author: 佚名
 ---
 
-## 起步
 
-**1. 新建一个空白文件夹，并且初始化`npm init`**
+## **1. 新建一个空白文件夹，并且初始化`npm init`**
 
-**2. 下载node-media-server**
+## **2. 下载node-media-server**
 ```sh
 npm install node-media-server --save
 ```
-**3. 新建一个入口文件index.js**
+## **3. 新建一个入口文件index.js**
 ```js
 const NodeMediaServer = require('node-media-server');
  
@@ -41,7 +39,7 @@ const config = {
 var nms = new NodeMediaServer(config)
 nms.run();
 ```
-**4. 开启服务**
+## **4. 开启服务**
 ```sh
 node index.js
 ```
@@ -50,7 +48,7 @@ node index.js
 
 <img :src="$withBase('/assets/img/使用flv_files/1.jpg')">
 
-**5. 新建一个index.html**
+## **5. 新建一个index.html**
 
 ```html
 <!DOCTYPE html>
@@ -83,7 +81,7 @@ node index.js
 [flv.js](https://github.com/bilibili/flv.js "flv.js")是来自Bilibli的开源项目。它解析FLV文件喂给原生HTML5 Video标签播放音视频数据，使浏览器在不借助Flash的情况下播放FLV成为可能
 :::
 
-**6. 安装[http-server](https://github.com/http-party/http-server "http-server")并且启动**
+## **6. 安装[http-server](https://github.com/http-party/http-server "http-server")并且启动**
 
 ```sh
 npm install http-server -g
@@ -92,7 +90,7 @@ npm install http-server -g
 
 <img :src="$withBase('/assets/img/使用flv_files/2.jpg')">
 
-**7. 使用obs进行推流**
+## **7. 使用obs进行推流**
 
 - 首先先下载[obs](https://obsproject.com/"obs")
 

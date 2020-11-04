@@ -6,7 +6,7 @@ module.exports = {
 	markdown: {
 		lineNumbers: true // 代码行号
 	},
-	base: process.env.NODE_ENV === 'production' ? '/' : '/',
+	base: process.env.NODE_ENV === 'production' ? '/xmbb_blog' : '/',
 	theme: 'reco',
 	themeConfig: {
 		logo: 'http://cd7.yesapi.net/96B4B5059E3DB099C78FFA6E90182B33_20200529161747_0d862bd287f406b0f5d01fd62c54ddd8.jpg',
@@ -75,6 +75,19 @@ module.exports = {
 					buttonText: "刷新"
 				}
 			}
-		]
+		],
+		['@vuepress-reco/vuepress-plugin-back-to-top', {
+			icon:'起飞',
+			customStyle: {
+				right: '1rem',
+				bottom: '6rem',
+				width: '2.5rem',
+				height: '2.5rem',
+				'border-radius': '.25rem',
+				'line-height': '2.5rem',
+				backgroundImage: "url('/assets/img/logo.jpg')",
+				backgroundRepeat: "round"
+			}
+		}],
 	]
 }
