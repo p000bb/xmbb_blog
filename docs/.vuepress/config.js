@@ -9,7 +9,7 @@ module.exports = {
 	head:[
 		['link', { rel: 'icon', href: '/favicon.ico' }],
 	],
-	base: process.env.NODE_ENV === 'production' ? '/xmbb/' : '/',
+	base: process.env.NODE_ENV === 'production' ? '/xmbb_blog/' : '/',
 	theme: 'reco',
 	themeConfig: {
 		logo: 'http://cd7.yesapi.net/96B4B5059E3DB099C78FFA6E90182B33_20200529161747_0d862bd287f406b0f5d01fd62c54ddd8.jpg',
