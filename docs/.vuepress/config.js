@@ -64,10 +64,10 @@ module.exports = {
 			//   bottom: '40px',
 			// }
 		}],
-		['permalink-pinyin', {
-			lowercase: true,
-			separator: '-'
-		}],
+		// ['permalink-pinyin', {
+		// 	lowercase: true,
+		// 	separator: '-'
+		// }],
 		['@vuepress/medium-zoom', {
 			selector: '.theme-reco-content :not(a) > img',
 			options: {

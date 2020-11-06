@@ -18,16 +18,18 @@ module.exports = [{
 		icon: 'reco-suggestion'
 	},
 	{
-		text: '个人生活',
-		items: [{
-			text: '游戏时间',
-			link: '/gameTime/'
-		}, {
-			text: '电影时间',
-			link: '/movieTime/'
-		}, {
-			text: '心情随录',
-			link: '/myLife/'
-		}, ]
+		text: '我的生活',
+		icon: 'reco-account',
+		link: '/about/',
+		// items: [{
+		// 	text: '游戏时间',
+		// 	link: '/gameTime/'
+		// }, {
+		// 	text: '电影时间',
+		// 	link: '/movieTime/'
+		// }, {
+		// 	text: '心情随录',
+		// 	link: '/myLife/'
+		// }, ]
 	},
 ]

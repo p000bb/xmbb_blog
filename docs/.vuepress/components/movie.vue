@@ -1,6 +1,7 @@
 <template>
 	<div class="movie">
 		<h2>电影时间</h2>
+		<Content slot-key="tip" />
 		<ul>
 			<li v-for="(item,index) in movieList" class="movieLi">
 				<div style="display: flex;">
@@ -11,14 +12,19 @@
 						<h2 class="title" @click="goDouban(item.url)">{{item.title}}</h2>
 						<div class="movieInfo" v-html="item.comment"></div>
 						<div class="page-info">
-							<div class="tags">观影时间:{{item.time}}</div>
-							<div class="tags">个人评分:{{item.rank}}</div>
+							<div class="tags"><i class="el-icon-timer"></i>{{item.time}}</div>
+							<div class="tags">
+								<span style="margin-right:1rem">个人评分:</span>
+								<el-rate :value="item.rank/2" disabled show-score text-color="#ff9900" :score-template="item.rank">
+								</el-rate>
+							</div>
 						</div>
 					</div>
 				</div>
 			</li>
 		</ul>
-		<el-pagination background :current-page="currentPage"  @current-change="handleCurrentChange" layout="prev, pager, next" :total="total" :page-size="pageSize">
+		<el-pagination background :current-page="currentPage" @current-change="handleCurrentChange" layout="prev, pager, next"
+		 :total="total" :page-size="pageSize">
 		</el-pagination>
 	</div>
 </template>
@@ -29,27 +35,27 @@
 		data() {
 			return {
 				movieList: [],
-				currentPage:1,
-				total:1,
-				pageSize:10,
+				currentPage: 1,
+				total: 1,
+				pageSize: 10,
 			}
 		},
 		created() {
-			this.movieList = movieList.slice((this.currentPage-1)*this.pageSize,this.currentPage*this.pageSize)
+			this.movieList = movieList.slice((this.currentPage - 1) * this.pageSize, this.currentPage * this.pageSize)
 			this.total = movieList.length
 		},
 		methods: {
 			goDouban(url) {
 				window.open(url)
 			},
-			handleCurrentChange(val){
+			handleCurrentChange(val) {
 				this.currentPage = val
 				// let scroll = document.querySelector('.light')	//	返回顶部
 				// console.log(scroll.scrollTop)
 				// scroll.scrollTop = 0
 				// console.log(scroll.scrollTop)
-				window.scrollTo(0,0);  
-				this.movieList = movieList.slice((this.currentPage-1)*this.pageSize,this.currentPage*this.pageSize)
+				window.scrollTo(0, 0);
+				this.movieList = movieList.slice((this.currentPage - 1) * this.pageSize, this.currentPage * this.pageSize)
 			}
 		}
 	}
@@ -65,15 +71,6 @@
 		line-height: 1.25;
 		color: rgb(33, 117, 155)
 	}
-
-	/* 	.movieLi{
-		cursor: pointer;
-		list-style-type:none;
-		margin: 0 auto 20px;
-		padding: 16px 20px;
-		border-radius: 0.25rem;
-		border: 1px solid rgba(0, 0, 0, .1);
-	} */
 	.movieLi {
 		border-bottom: 2px solid #e8e8e8;
 		padding: 16px 20px;
@@ -87,7 +84,8 @@
 
 	.movie_img {
 		height: 200px;
-		width: auto;
+		width: 150px;
+		object-fit: contain
 	}
 
 	.movieInfo {
@@ -102,9 +100,15 @@
 		padding: 0 5px;
 		display: flex;
 		color: #a5a5a5;
+		align-items: center;
 	}
 
 	.tags {
-		padding: 0 5px;
+		margin-right: 1rem;
+		display: flex;
+		align-items: center;
+	}
+	i {
+		margin-right: .5rem;
 	}
 </style>
