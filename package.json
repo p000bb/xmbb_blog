@@ -19,6 +19,7 @@
     "vuepress-theme-reco": "^1.5.7"
   },
   "dependencies": {
-    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5"
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
+    "element-ui": "^2.14.0"
   }
 }
