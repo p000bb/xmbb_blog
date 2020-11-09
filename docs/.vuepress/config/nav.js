@@ -20,7 +20,7 @@ module.exports = [{
 	{
 		text: '我的生活',
 		icon: 'reco-account',
-		link: '/about/',
+		link: '/个人生活/关于我.html',
 		// items: [{
 		// 	text: '游戏时间',
 		// 	link: '/gameTime/'

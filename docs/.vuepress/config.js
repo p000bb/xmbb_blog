@@ -8,6 +8,7 @@ module.exports = {
 	},
 	head:[
 		['link', { rel: 'icon', href: '/favicon.ico' }],
+		['meta', { name: 'referrer', content: 'no-referrer' }],
 	],
 	base: process.env.NODE_ENV === 'production' ? '/' : '/',
 	theme: 'reco',
@@ -28,6 +29,7 @@ module.exports = {
 		docsDir: 'docs',
 		editLinks: true,
 		editLinkText: '编辑一下！',
+		sidebarDepth: 1,
 		vssueConfig: { //	评论栏配置
 			platform: 'gitee',
 			owner: 'xiong_ying001',
@@ -74,6 +76,7 @@ module.exports = {
 				margin: 16
 			}
 		}],
+		['vuepress-plugin-auto-sidebar'],
 		[
 			'@vuepress/pwa',
 			{

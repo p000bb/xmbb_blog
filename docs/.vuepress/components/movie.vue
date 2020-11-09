@@ -1,12 +1,13 @@
 <template>
 	<div class="movie">
-		<h2>电影时间</h2>
+		<!-- <h2>电影时间</h2> -->
 		<Content slot-key="tip" />
-		<ul>
+		<ul v-loading="loading">
 			<li v-for="(item,index) in movieList" class="movieLi">
 				<div style="display: flex;">
 					<div style="margin-right: 1.5rem;">
-						<img :src="$withBase(item.img)" alt="" class="movie_img">
+						<!-- <img :src="$withBase(item.img)" alt="" class="movie_img"> -->
+						<img :src="item.img" alt="" class="movie_img">
 					</div>
 					<div style="width: 100%;">
 						<h2 class="title" @click="goDouban(item.url)">{{item.title}}</h2>
@@ -38,6 +39,7 @@
 				currentPage: 1,
 				total: 1,
 				pageSize: 10,
+				loading: false,
 			}
 		},
 		created() {
@@ -49,13 +51,13 @@
 				window.open(url)
 			},
 			handleCurrentChange(val) {
-				this.currentPage = val
-				// let scroll = document.querySelector('.light')	//	返回顶部
-				// console.log(scroll.scrollTop)
-				// scroll.scrollTop = 0
-				// console.log(scroll.scrollTop)
-				window.scrollTo(0, 0);
-				this.movieList = movieList.slice((this.currentPage - 1) * this.pageSize, this.currentPage * this.pageSize)
+				this.loading = true;
+				setTimeout(() => {
+					this.currentPage = val
+					window.scrollTo(0, 0);
+					this.movieList = movieList.slice((this.currentPage - 1) * this.pageSize, this.currentPage * this.pageSize)
+					this.loading = false
+				}, 1000)
 			}
 		}
 	}
@@ -71,6 +73,7 @@
 		line-height: 1.25;
 		color: rgb(33, 117, 155)
 	}
+
 	.movieLi {
 		border-bottom: 2px solid #e8e8e8;
 		padding: 16px 20px;
@@ -108,6 +111,7 @@
 		display: flex;
 		align-items: center;
 	}
+
 	i {
 		margin-right: .5rem;
 	}

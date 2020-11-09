@@ -1,8 +1,0 @@
----
-isShowComments: false
----
-::: slot tip
-::: tip 说明
-这里记录着我在电影院看过的电影（我记得的，有些不记得的就没记录了😂😂😂）
-:::
-<movie></movie>

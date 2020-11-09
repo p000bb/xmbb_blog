@@ -1,4 +1,0 @@
----
-isShowComments: false
----
-<mylife></mylife>
