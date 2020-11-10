@@ -91,7 +91,7 @@ npm install http-server -g
 
 ## **7. 使用obs进行推流**
 
-- 首先先下载[obs](https://obsproject.com/"obs")
+- 首先先下载[obs](https://obsproject.com/ "obs")
 - 打开obs - 设置
 
 配置成下面这张图样的

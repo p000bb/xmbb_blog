@@ -73,7 +73,18 @@
 		line-height: 1.25;
 		color: rgb(33, 117, 155)
 	}
-
+	.title:after{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		background-color: #2999fe;
+		visibility: hidden;
+		transform: scaleX(0);
+		transition: 0.3s ease-in-out;
+	}
 	.movieLi {
 		border-bottom: 2px solid #e8e8e8;
 		padding: 16px 20px;
@@ -96,7 +107,7 @@
 		line-height: 1.6rem;
 		padding: 5px;
 		margin-bottom: 5px;
-		height: calc(100% - 100px);
+		min-height: 120px;
 	}
 
 	.page-info {

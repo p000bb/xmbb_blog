@@ -1,4 +1,6 @@
 ---
+sidebar: false
+pageClass: message
 ---
 <Message></Message>
 ::: slot tip
