@@ -27,11 +27,23 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "504397c027bb6ec5004ce3bdb9ac50e5"
+    "revision": "d48bda1d11364f2692b448ac84ee7f06"
   },
   {
-    "url": "assets/css/0.styles.cbd6ed7a.css",
-    "revision": "ef2206f10a4326b33826080f781ad77a"
+    "url": "个人生活/电影时间.html",
+    "revision": "9585ac7de098eee8e16866e1088afa70"
+  },
+  {
+    "url": "个人生活/关于我.html",
+    "revision": "bf68adc479fd5a257e1f1991b516cb0e"
+  },
+  {
+    "url": "个人生活/游戏时间.html",
+    "revision": "5f58ad1be5c1657d78da8e71cfc19857"
+  },
+  {
+    "url": "assets/css/0.styles.494e6b9f.css",
+    "revision": "d214095202ceaaffbec8860fcc8dfc07"
   },
   {
     "url": "assets/fonts/element-icons.535877f5.woff",
@@ -40,22 +52,6 @@ self.__precacheManifest = [
   {
     "url": "assets/fonts/element-icons.732389de.ttf",
     "revision": "732389ded34cb9c52dd88271f1345af9"
-  },
-  {
-    "url": "assets/img/bg.2cfdbb33.svg",
-    "revision": "2cfdbb338a1d44d700b493d7ecbe65d3"
-  },
-  {
-    "url": "assets/img/iconfont.117d8006.svg",
-    "revision": "117d8006a3c478fbc8c4ce04a36ddb5a"
-  },
-  {
-    "url": "assets/img/logo.jpg",
-    "revision": "2a40145fd3a14660f63eeeff7bf37d81"
-  },
-  {
-    "url": "assets/img/vuepress中使用elementUI_files/1.jpg",
-    "revision": "ba50a15a5d7306a0982ae3d1a408c191"
   },
   {
     "url": "assets/img/使用flv_files/1.jpg",
@@ -74,7 +70,23 @@ self.__precacheManifest = [
     "revision": "1b6586004bcc2f060eace672caec910d"
   },
   {
-    "url": "assets/js/1.48cae044.js",
+    "url": "assets/img/bg.2cfdbb33.svg",
+    "revision": "2cfdbb338a1d44d700b493d7ecbe65d3"
+  },
+  {
+    "url": "assets/img/iconfont.117d8006.svg",
+    "revision": "117d8006a3c478fbc8c4ce04a36ddb5a"
+  },
+  {
+    "url": "assets/img/logo.jpg",
+    "revision": "2a40145fd3a14660f63eeeff7bf37d81"
+  },
+  {
+    "url": "assets/img/vuepress中使用elementUI_files/1.jpg",
+    "revision": "ba50a15a5d7306a0982ae3d1a408c191"
+  },
+  {
+    "url": "assets/js/1.f792cb28.js",
     "revision": "270a5b5de9afeab6d79016aec396c7bb"
   },
   {
@@ -154,15 +166,15 @@ self.__precacheManifest = [
     "revision": "16bb98e676d2cf8dff677514efaa448e"
   },
   {
-    "url": "assets/js/3.c21d25f0.js",
+    "url": "assets/js/3.880d42f7.js",
     "revision": "f441e482f2468612e71abe2baa08c367"
   },
   {
-    "url": "assets/js/4.45378515.js",
+    "url": "assets/js/4.ead6ceeb.js",
     "revision": "bab61954a76174ae2fbb2b820169cceb"
   },
   {
-    "url": "assets/js/5.9c4e8ebb.js",
+    "url": "assets/js/5.f9a44927.js",
     "revision": "29321f9d0aa0814689cb12be97f8baa4"
   },
   {
@@ -174,84 +186,84 @@ self.__precacheManifest = [
     "revision": "4afcf93ac89cca04a4dd7d356d9a7061"
   },
   {
-    "url": "assets/js/8.559ad8d2.js",
+    "url": "assets/js/8.95af1c87.js",
     "revision": "90af627d57a58e867b0942c7095905a8"
   },
   {
-    "url": "assets/js/9.56017ce6.js",
+    "url": "assets/js/9.36c03843.js",
     "revision": "c8361cba8008cb5a4f29b85381b6f9ee"
   },
   {
-    "url": "assets/js/app.6f3ff07c.js",
-    "revision": "d97b61b7ee77f62025c740b4e7e4f8df"
-  },
-  {
-    "url": "blog/markdown语法/markdwn语法.html",
-    "revision": "cf6bd3c6285f7bad1e8ce664bef4cec0"
-  },
-  {
-    "url": "blog/前端/使用flv.js+obs+node-media-server实时直播.html",
-    "revision": "162a30394f2f9e208ed5c3c931da6838"
+    "url": "assets/js/app.81705fcd.js",
+    "revision": "7ee5cf95c050bf21aa3ed5336898de5a"
   },
   {
     "url": "blog/前端/如何解决图片加载失败的问题.html",
-    "revision": "9b34a39ebc9242e8c51aee5a94f232af"
+    "revision": "2f0f18a4555b7a5a25499a446be9ce72"
   },
   {
-    "url": "blog/转载/js实现无限层级树形数据结构.html",
-    "revision": "1e64692dbc95abfb329c0f655318adf9"
-  },
-  {
-    "url": "blog/转载/Vue组件.html",
-    "revision": "2b071aa56e97143ef7f68f4c254966b7"
-  },
-  {
-    "url": "blog/项目搭建/vuepress中使用elementUI.html",
-    "revision": "94262248aff98c38122af502ee32cb87"
+    "url": "blog/前端/使用flv.js+obs+node-media-server实时直播.html",
+    "revision": "5c065ff472de10ef40eaec72427d7bae"
   },
   {
     "url": "blog/项目搭建/本站搭建.html",
-    "revision": "7d85c9d7e2837892501fef8ff69e6e92"
+    "revision": "45357c37997be71dff520a945c2e14db"
   },
   {
-    "url": "categories/elementUI/index.html",
-    "revision": "fe60a321cf8d2fe371392e74eabb72bc"
+    "url": "blog/项目搭建/vuepress中使用elementUI.html",
+    "revision": "bb25ac59bee4c4c731dd354e26047109"
   },
   {
-    "url": "categories/index.html",
-    "revision": "f37a5d76f4678b91113188dbf3b52fad"
+    "url": "blog/转载/js实现无限层级树形数据结构.html",
+    "revision": "50d43072266da7fe43eea91d1440b205"
   },
   {
-    "url": "categories/js/index.html",
-    "revision": "63b8f2eb0183f4e74b4d2c154f157281"
+    "url": "blog/转载/Vue组件.html",
+    "revision": "e24dc00efc43b69b930c7451eba88877"
   },
   {
-    "url": "categories/Markdown语法/index.html",
-    "revision": "ae848c819c287edcfa789a04051d6701"
-  },
-  {
-    "url": "categories/vuepress/index.html",
-    "revision": "ced40909b95cd1b92aa3aaa5c64043f2"
-  },
-  {
-    "url": "categories/前端/index.html",
-    "revision": "3d13a114afd2c6ef32f8026cb88529c2"
-  },
-  {
-    "url": "categories/实时直播/index.html",
-    "revision": "4b2d95a7a79c8dbfde84b9fc494a3bee"
+    "url": "blog/markdown语法/markdwn语法.html",
+    "revision": "9ea2951ed756606cf1613f80841c93fc"
   },
   {
     "url": "categories/笔记/index.html",
-    "revision": "b7f022684d6a36abc6184984c61b0de5"
+    "revision": "2c2b69a1ee4a8ed384112e9b41e0dfc2"
   },
   {
-    "url": "categories/自动化部署/index.html",
-    "revision": "dfd6b7dd2e9b880bfe1c1f2da3f36b83"
+    "url": "categories/前端/index.html",
+    "revision": "ae05e43787be4d96bfadfd6a9d89a49e"
+  },
+  {
+    "url": "categories/实时直播/index.html",
+    "revision": "4f0c68bd831cf1db99c5db052ae25fd9"
   },
   {
     "url": "categories/转载/index.html",
-    "revision": "380dbcdf6e8366476728c69941190a5b"
+    "revision": "03f9da7807ab613756516146b9216262"
+  },
+  {
+    "url": "categories/自动化部署/index.html",
+    "revision": "79fe5550f7cc40ab36447bc97f225819"
+  },
+  {
+    "url": "categories/elementUI/index.html",
+    "revision": "2566a868b883267bf8354d371154422a"
+  },
+  {
+    "url": "categories/index.html",
+    "revision": "1c7d1f60408f1186498b1a7b98e3889c"
+  },
+  {
+    "url": "categories/js/index.html",
+    "revision": "95e9fac947666640a17d86202fbb36ec"
+  },
+  {
+    "url": "categories/Markdown语法/index.html",
+    "revision": "d50ab38de1032f5f3cc25145674ad9e3"
+  },
+  {
+    "url": "categories/vuepress/index.html",
+    "revision": "68a804f75a544c59fa9a3765d695bd7e"
   },
   {
     "url": "home.jpg",
@@ -259,75 +271,63 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "e2de36dbcabcc2d23aa19158cf4c8fb2"
+    "revision": "9c3e5925eb0f53caed07cb3527c310d2"
   },
   {
     "url": "message/index.html",
-    "revision": "ef784ea5cec04c52c662f666b25cdca7"
-  },
-  {
-    "url": "tag/flv.js/index.html",
-    "revision": "774c1d6cda9362a82e4f4287d5cdd71f"
-  },
-  {
-    "url": "tag/index.html",
-    "revision": "b0bb02fd46bfcf0c63d78e54109b3107"
-  },
-  {
-    "url": "tag/js/index.html",
-    "revision": "775ca06d0fd59ead8b90b3eb8c787787"
-  },
-  {
-    "url": "tag/node-media-server/index.html",
-    "revision": "e525a32e710a960f437af511b22b0f18"
-  },
-  {
-    "url": "tag/obs/index.html",
-    "revision": "23f4e7af92af32269f1252b739b2a0bf"
-  },
-  {
-    "url": "tag/Vue/index.html",
-    "revision": "9a79832a5df53f636ae2d94bded073d4"
-  },
-  {
-    "url": "tag/原创/index.html",
-    "revision": "d11bbe4ea5981080029a85cc7b084371"
-  },
-  {
-    "url": "tag/小知识/index.html",
-    "revision": "3576ded675e4b2cfb720c3be8023eeb1"
+    "revision": "b4e8741715a5164fcab4ed9b570d0145"
   },
   {
     "url": "tag/本站搭建/index.html",
-    "revision": "e6a2b49e5f062c4e8a151058eb8ec896"
+    "revision": "bee970960104f174547022f7a815ec36"
+  },
+  {
+    "url": "tag/小知识/index.html",
+    "revision": "05920cb15a6128ccefcc4b50c4d3b2d2"
   },
   {
     "url": "tag/语法/index.html",
-    "revision": "ae00bca80b1125a81204a71ee879625e"
+    "revision": "c731682b9d6d6d40479cf996f1558790"
+  },
+  {
+    "url": "tag/原创/index.html",
+    "revision": "74fc58e092d81cfec02d137ba5fc0ca6"
   },
   {
     "url": "tag/转载/index.html",
-    "revision": "018f451adf503515747afb3a2001b2a7"
+    "revision": "332683a47842e5a1a4bab3636c0bb3cc"
+  },
+  {
+    "url": "tag/flv.js/index.html",
+    "revision": "aa3877c850c1a7d11c562ba661962442"
+  },
+  {
+    "url": "tag/index.html",
+    "revision": "c63ed932e14380edc1238ae0b26160f8"
+  },
+  {
+    "url": "tag/js/index.html",
+    "revision": "a6d8cf607b111b3469798e517d32e168"
+  },
+  {
+    "url": "tag/node-media-server/index.html",
+    "revision": "928eda2a8c4ed03ac848b1468834c412"
+  },
+  {
+    "url": "tag/obs/index.html",
+    "revision": "5e1f9ae4da5f995171a3f9baa7e6bb81"
+  },
+  {
+    "url": "tag/Vue/index.html",
+    "revision": "f2e4e6c6eac889538591cc53fcdb09f7"
   },
   {
     "url": "timeline/index.html",
-    "revision": "667f4e540c2b4bb933d609fdae640a4a"
+    "revision": "42743c693715486a51083c11b46d0de8"
   },
   {
     "url": "web/index.html",
-    "revision": "533c2b90933cf367efe6efa51fc70fc9"
-  },
-  {
-    "url": "个人生活/关于我.html",
-    "revision": "5517ad82a6e8f3196ce6755b23584697"
-  },
-  {
-    "url": "个人生活/游戏时间.html",
-    "revision": "be02333852d8f7fce2a63423c322715c"
-  },
-  {
-    "url": "个人生活/电影时间.html",
-    "revision": "34ff831a53a6aff7344f359763710630"
+    "revision": "143504da4739a22784375395032987b6"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
