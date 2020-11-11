@@ -1,5 +1,6 @@
 const nav = require('./config/nav.js');
 const sidebar = require('./config/sidebar.js');
+const plugins = require('./config/plugins.js');
 module.exports = {
 	title: '熊猫宝宝',
 	description: '欢迎来到90后快乐肥宅熊猫宝宝的个人博客😄😄😄',
@@ -49,56 +50,5 @@ module.exports = {
 			}
 		}
 	},
-	plugins: [
-		['@vuepress-reco/vuepress-plugin-kan-ban-niang', {
-			messages: {
-				home: '大爷快来玩啊',
-				theme: '别把兄弟',
-				close: '你知道我喜欢吃什么吗？痴痴地望着你。'
-			},
-			// modelStyle:{
-			//  left:'100px',
-			//  bottom: '0px',
-			//  opacity: '0.9'
-			// },
-			// btnStyle:{
-			//   left: '90px',
-			//   bottom: '40px',
-			// }
-		}],
-		// ['permalink-pinyin', {
-		// 	lowercase: true,
-		// 	separator: '-'
-		// }],
-		['@vuepress/medium-zoom', {
-			selector: '.theme-reco-content :not(a) > img',
-			options: {
-				margin: 16
-			}
-		}],
-		['vuepress-plugin-auto-sidebar'],
-		[
-			'@vuepress/pwa',
-			{
-				serviceWorker: true,
-				updatePopup: {
-					message: "发现新内容可用",
-					buttonText: "刷新"
-				}
-			}
-		],
-		['@vuepress-reco/vuepress-plugin-back-to-top', {
-			icon:'起飞',
-			customStyle: {
-				right: '1rem',
-				bottom: '6rem',
-				width: '2.5rem',
-				height: '2.5rem',
-				'border-radius': '.25rem',
-				'line-height': '2.5rem',
-				backgroundImage: "url('http://cd7.yesapi.net/96B4B5059E3DB099C78FFA6E90182B33_20200529161747_0d862bd287f406b0f5d01fd62c54ddd8.jpg')",
-				backgroundRepeat: "round"
-			}
-		}],
-	]
+	plugins: plugins
 }
