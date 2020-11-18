@@ -7,7 +7,8 @@
 				<div style="display: flex;">
 					<div style="margin-right: 1.5rem;">
 						<!-- <img :src="$withBase(item.img)" alt="" class="movie_img"> -->
-						<img :src="item.img" alt="" class="movie_img">
+						<!-- <img :src="item.img" alt="" class="movie_img"> -->
+						<el-image :key="item.img" :src="item.img" lazy class="movie_img"></el-image>
 					</div>
 					<div style="width: 100%;">
 						<h2 class="title" @click="goDouban(item.url)">{{item.title}}</h2>
