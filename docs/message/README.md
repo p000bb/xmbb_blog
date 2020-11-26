@@ -1,6 +1,7 @@
 ---
 sidebar: false
 pageClass: message
+isShowComments: true
 ---
 <Message></Message>
 ::: slot tip
