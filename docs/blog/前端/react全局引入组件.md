@@ -1,6 +1,7 @@
 ---
 title: react全局引入组件
 date: 2020-11-18 19:14:21
+isShowComments: false
 categories: 
   - 前端
 tags: 
