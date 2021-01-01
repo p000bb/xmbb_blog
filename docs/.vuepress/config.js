@@ -7,11 +7,11 @@ module.exports = {
 	markdown: {
 		lineNumbers: true // 代码行号
 	},
-	head:[
+	head: [
 		['link', { rel: 'icon', href: '/favicon.ico' }],
 		['meta', { name: 'referrer', content: 'no-referrer' }],
 	],
-	base: process.env.NODE_ENV === 'production' ? '/xmbb_blog/' : '/',
+	base: process.env.NODE_ENV === 'production' ? '/' : '/',
 	theme: 'reco',
 	themeConfig: {
 		logo: 'http://cd7.yesapi.net/96B4B5059E3DB099C78FFA6E90182B33_20200529161747_0d862bd287f406b0f5d01fd62c54ddd8.jpg',
@@ -24,8 +24,8 @@ module.exports = {
 		// displayAllHeaders: true,
 		smoothScroll: true, // 页面滚动
 		authorAvatar: 'http://cd7.yesapi.net/96B4B5059E3DB099C78FFA6E90182B33_20200529161747_0d862bd287f406b0f5d01fd62c54ddd8.jpg',
-		tag:'标签',
-		category:'分类',
+		tag: '标签',
+		category: '分类',
 		lastUpdated: '上次更新', //	更新时间
 		repo: 'p000bb/xmbb_blog', // 导航栏右侧生成Github链接
 		docsBranch: 'master',
