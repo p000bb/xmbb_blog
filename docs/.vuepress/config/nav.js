@@ -18,6 +18,11 @@ module.exports = [{
 		icon: 'reco-suggestion'
 	},
 	{
+		text: '小美的生活',
+		link: '/Friends/',
+		icon: 'reco-suggestion'
+	},
+	{
 		text: '我的生活',
 		icon: 'reco-account',
 		link: '/个人生活/关于我.html',

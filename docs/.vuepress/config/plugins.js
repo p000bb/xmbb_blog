@@ -6,10 +6,6 @@ module.exports = [
 			close: '你知道我喜欢吃什么吗？痴痴地望着你。'
 		},
 	}],
-	// ['permalink-pinyin', {
-	// 	lowercase: true,
-	// 	separator: '-'
-	// }],
 	['@vuepress/medium-zoom', {
 		selector: '.theme-reco-content :not(a) > img',
 		options: {
