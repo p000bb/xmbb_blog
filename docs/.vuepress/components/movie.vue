@@ -3,7 +3,7 @@
     <!-- <h2>电影时间</h2> -->
     <Content slot-key="tip" />
     <ul v-loading="loading">
-      <li v-for="(item, index) in movieList" class="movieLi">
+      <li v-for="(item, index) in movieList" class="movieLi" :key="index">
         <div style="display: flex" v-if="!isMobile">
           <div style="margin-right: 1.5rem">
             <el-image
