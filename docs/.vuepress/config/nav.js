@@ -18,8 +18,8 @@ module.exports = [{
 		icon: 'reco-suggestion'
 	},
 	{
-		text: '小美的生活',
-		link: '/Friends/',
+		text: '照片墙',
+		link: '/Img/',
 		icon: 'reco-suggestion'
 	},
 	{

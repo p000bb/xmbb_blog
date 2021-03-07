@@ -4,10 +4,8 @@
     <Content slot-key="tip" />
     <ul v-loading="loading">
       <li v-for="(item, index) in movieList" class="movieLi">
-        <div style="display: flex;">
-          <div style="margin-right: 1.5rem;">
-            <!-- <img :src="$withBase(item.img)" alt="" class="movie_img"> -->
-            <!-- <img :src="item.img" alt="" class="movie_img"> -->
+        <div style="display: flex" v-if="!isMobile">
+          <div style="margin-right: 1.5rem">
             <el-image
               :key="item.img"
               :src="item.img"
@@ -15,7 +13,7 @@
               class="movie_img"
             ></el-image>
           </div>
-          <div style="width: 100%;">
+          <div style="width: 100%">
             <h2 class="title" @click="goDouban(item.url)">{{ item.title }}</h2>
             <div class="movieInfo" v-html="item.comment"></div>
             <div class="page-info">
@@ -23,7 +21,7 @@
                 <i class="el-icon-timer"></i>{{ item.time }}
               </div>
               <div class="tags">
-                <span style="margin-right:1rem">个人评分:</span>
+                <span style="margin-right: 1rem">个人评分:</span>
                 <el-rate
                   :value="item.rank / 2"
                   disabled
@@ -32,6 +30,38 @@
                   :score-template="item.rank"
                 >
                 </el-rate>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div v-else>
+          <h2 class="title" @click="goDouban(item.url)">{{ item.title }}</h2>
+          <div style="display: flex">
+            <div style="margin-right: 1.5rem">
+              <el-image
+                :key="item.img"
+                :src="item.img"
+                lazy
+                class="movie_img"
+              ></el-image>
+            </div>
+            <div>
+              <div class="movieInfo" v-html="item.comment"></div>
+              <div class="page-info">
+                <div class="tags">
+                  <i class="el-icon-timer"></i>{{ item.time }}
+                </div>
+                <div class="tags">
+                  <span style="margin-right: 1rem">个人评分:</span>
+                  <el-rate
+                    :value="item.rank / 2"
+                    disabled
+                    show-score
+                    text-color="#ff9900"
+                    :score-template="item.rank"
+                  >
+                  </el-rate>
+                </div>
               </div>
             </div>
           </div>
@@ -51,8 +81,10 @@
 </template>
 
 <script>
+import isPhone from "../mixins/index";
 const movieList = require("../public/assets/json/movie.json");
 export default {
+  mixins: [isPhone],
   data() {
     return {
       movieList: [],
@@ -60,9 +92,11 @@ export default {
       total: 1,
       pageSize: 10,
       loading: false,
+      isMobile: false,
     };
   },
   created() {
+    this.isMobile = this.isPhone(); // 判断是手机端 还是pc端
     this.movieList = movieList.slice(
       (this.currentPage - 1) * this.pageSize,
       this.currentPage * this.pageSize
@@ -153,31 +187,31 @@ i {
   margin-right: 0.5rem;
 }
 @media screen and (max-width: 768px) {
-			.movie_img {
-				height: 100px;
-				width: 75px;
-				object-fit: contain;
-			}
+  .movie_img {
+    height: 100px;
+    width: 75px;
+    object-fit: contain;
+  }
 
-			.movieInfo {
-				font-size: 1rem;
-				line-height: 1.6rem;
-				padding: 5px;
-				margin-bottom: 5px;
-				min-height: 60px;
-			}
+  .movieInfo {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 5px;
+    margin-bottom: 5px;
+    min-height: 60px;
+  }
 
-			.tags {
-				margin-right: 1rem;
-				display: block;
-				align-items: center;
-			}
+  .tags {
+    margin-right: 1rem;
+    display: block;
+    align-items: center;
+  }
 
-			.page-info {
-				padding: 0 5px;
-				color: #a5a5a5;
-				display: block;
-				align-items: center;
-			}
-		}
+  .page-info {
+    padding: 0 5px;
+    color: #a5a5a5;
+    display: block;
+    align-items: center;
+  }
+}
 </style>
