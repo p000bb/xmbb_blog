@@ -26,15 +26,5 @@ module.exports = [{
 		text: '我的生活',
 		icon: 'reco-account',
 		link: '/个人生活/关于我.html',
-		// items: [{
-		// 	text: '游戏时间',
-		// 	link: '/gameTime/'
-		// }, {
-		// 	text: '电影时间',
-		// 	link: '/movieTime/'
-		// }, {
-		// 	text: '心情随录',
-		// 	link: '/myLife/'
-		// }, ]
 	},
 ]
