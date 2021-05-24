@@ -93,6 +93,7 @@ export default {
       pageSize: 10,
       loading: false,
       isMobile: false,
+      windows:null,
     };
   },
   created() {
@@ -103,15 +104,18 @@ export default {
     );
     this.total = movieList.length;
   },
+  mounted(){
+    this.windows = window
+  },
   methods: {
     goDouban(url) {
-      window.open(url);
+      this.windows.open(url);
     },
     handleCurrentChange(val) {
       this.loading = true;
       setTimeout(() => {
         this.currentPage = val;
-        window.scrollTo(0, 0);
+        this.windows.scrollTo(0, 0);
         this.movieList = movieList.slice(
           (this.currentPage - 1) * this.pageSize,
           this.currentPage * this.pageSize
