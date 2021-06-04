@@ -3,7 +3,7 @@
     <!-- <h2>电影时间</h2> -->
     <Content slot-key="tip" />
     <ul v-loading="loading">
-      <li v-for="(item, index) in movieList" class="movieLi" :key="index">
+      <li v-for="(item, index) in movieList" class="movieLi" :key="index" :class="item.solo && 'solo'">
         <div style="display: flex" v-if="!isMobile">
           <div style="margin-right: 1.5rem">
             <el-image
@@ -21,7 +21,7 @@
                 <i class="el-icon-timer"></i>{{ item.time }}
               </div>
               <div class="tags">
-                <span style="margin-right: 1rem">个人评分:</span>
+                <span>个人评分：</span>
                 <el-rate
                   :value="item.rank / 2"
                   disabled
@@ -31,6 +31,10 @@
                 >
                 </el-rate>
               </div>
+              <div class="tags">
+                <span>城市：</span>
+                <span>{{item.city}}</span>
+            </div>
             </div>
           </div>
         </div>
@@ -189,6 +193,9 @@ export default {
 
 i {
   margin-right: 0.5rem;
+}
+.solo{
+  background: #004eff2e;
 }
 @media screen and (max-width: 768px) {
   .movie_img {
