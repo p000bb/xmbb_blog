@@ -4,7 +4,7 @@ import axios from 'axios';
 // 公共路由(网络请求地址)
 const app_key = '96B4B5059E3DB099C78FFA6E90182B33';
 const secrect = 'Xgy0QvrQrDKUxi7cTDau1oxtJcxcbEA2tROf4yTDxOgVS3PzQXbohCFtwPYug'
-axios.defaults.baseURL = 'http://hn216.api.yesapi.cn/';
+axios.defaults.baseURL = 'https://hn216.api.yesapi.cn/';
 // 请求响应超时时间
 axios.defaults.timeout = 500;
 
