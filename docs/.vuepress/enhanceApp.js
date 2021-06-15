@@ -1,4 +1,5 @@
 import ElementUI from 'element-ui';
+import axios from './http/axios';
 import 'element-ui/lib/theme-chalk/index.css';
 
 
@@ -9,4 +10,5 @@ export default ({
   siteData // 站点元数据
 }) => {
   Vue.use(ElementUI);
+  Vue.prototype.axios = axios
 }
