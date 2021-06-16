@@ -2,7 +2,6 @@ import ElementUI from 'element-ui';
 import axios from './http/axios';
 import 'element-ui/lib/theme-chalk/index.css';
 
-
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数
   options, // 附加到根实例的一些选项

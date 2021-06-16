@@ -48,8 +48,8 @@ export default {
         })
         .then((res) => {
           this.loading = false;
-          this.list = [...this.list, ...res.list];
-          this.total = this.list.length;
+          this.list = res.list;
+          this.total = res.total;
         });
     },
     handleCurrentChange(val) {
