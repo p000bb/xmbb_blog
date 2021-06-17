@@ -5,21 +5,10 @@
       <el-timeline-item
         :timestamp="item.timedate"
         placement="top"
-        v-for="item in list"
+        v-for="item in mylist"
         :key="item.id"
       >
         <el-card class="my-card">
-          <div v-if="item.aerobic_time">
-            <h2>有氧训练</h2>
-            <div style="display: flex; justify-content: space-between">
-              <div>{{ item.aerobic }}</div>
-              <div>时间:{{ item.aerobic_time }}</div>
-            </div>
-          </div>
-          <div v-if="item.anaerobic">
-            <h2>无氧训练</h2>
-            <div v-html="item.anaerobic"></div>
-          </div>
           <h2>心得</h2>
           <div v-html="item.main" class="main"></div>
         </el-card>
@@ -49,6 +38,11 @@ export default {
       pageSize: 10,
       loading: false,
     };
+  },
+  computed:{
+    mylist(){
+      return list.filter(item=>item.main)
+    }
   },
   created() {
     this.getData();
