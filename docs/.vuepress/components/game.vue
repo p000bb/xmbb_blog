@@ -41,7 +41,7 @@ export default {
   },
   computed:{
     mylist(){
-      return list.filter(item=>item.main)
+      return this.list.filter(item=>item.main)
     }
   },
   created() {
