@@ -46,7 +46,6 @@ tags:
 			reader.readAsDataURL(blob);
 			reader.onload = (e) => {
 				that.base64 = e.target.result
-				console.log(this.base64)
 			};
 		}
 	}

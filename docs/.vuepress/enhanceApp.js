@@ -17,5 +17,4 @@ export default ({
   }
   Vue.use(ElementUI);
   Vue.prototype.axios = axios;
-  console.log(document.querySelector('.logo'))
 }

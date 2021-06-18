@@ -70,7 +70,6 @@
 						var blob = this.response;
 						// 至关重要
 						//	进行文件格式和大小验证
-						console.log(blob)
 						const isJPG = blob.type === 'image/jpeg';
 						const isGIF = blob.type === 'image/gif';
 						const isPNG = blob.type === 'image/png';
@@ -92,7 +91,6 @@
 						reader.readAsDataURL(blob);
 						reader.onload = (e) => {
 							that.base64 = e.target.result
-							console.log(this.base64)
 						};
 					}else{
 						that.$message.error('请输入正确的图片地址');
