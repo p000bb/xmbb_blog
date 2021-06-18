@@ -14,7 +14,7 @@
         </el-card>
       </el-timeline-item>
     </el-timeline>
-    <el-pagination
+    <!-- <el-pagination
       background
       :current-page="currentPage"
       @current-change="handleCurrentChange"
@@ -22,7 +22,7 @@
       :total="total"
       :page-size="pageSize"
     >
-    </el-pagination>
+    </el-pagination> -->
   </div>
 </template>
 

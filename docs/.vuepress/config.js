@@ -14,7 +14,7 @@ module.exports = {
 	base: process.env.NODE_ENV === 'production' ? '/' : '/',
 	theme: 'reco',
 	themeConfig: {
-		logo: 'http://cd7.yesapi.net/96B4B5059E3DB099C78FFA6E90182B33_20200529161747_0d862bd287f406b0f5d01fd62c54ddd8.jpg',
+		logo: '/assets/img/logo.jpg',
 		nav,
 		sidebar,
 		subSidebar: 'auto', //在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
@@ -23,7 +23,7 @@ module.exports = {
 		postList: "detailed",
 		// displayAllHeaders: true,
 		smoothScroll: true, // 页面滚动
-		authorAvatar: 'http://cd7.yesapi.net/96B4B5059E3DB099C78FFA6E90182B33_20200529161747_0d862bd287f406b0f5d01fd62c54ddd8.jpg',
+		authorAvatar: '/assets/img/logo.jpg',
 		tag: '标签',
 		category: '分类',
 		lastUpdated: '上次更新', //	更新时间

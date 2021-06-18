@@ -8,6 +8,14 @@ export default ({
   router, // 当前应用的路由实例
   siteData // 站点元数据
 }) => {
+  const url = router.history._startLocation;
+  const name = router.history.name
+  const arrayRouter = router.options.routes
+  const find = arrayRouter.findIndex(item =>item.redirect === url || item.name === name)
+  if(find === -1){
+    router.replace(' ')
+  }
   Vue.use(ElementUI);
-  Vue.prototype.axios = axios
+  Vue.prototype.axios = axios;
+  console.log(document.querySelector('.logo'))
 }
