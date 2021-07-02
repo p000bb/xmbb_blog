@@ -1,7 +1,10 @@
 <template>
   <div v-loading="loading">
-    <div ref="myCharts" :style="{ width: '100%', height: '300px' }"></div>
-    <el-timeline>
+    <div ref="myCharts" class="myCharts"></div>
+    <div style="margin-top: 2rem">
+      <div ref="category" class="category"></div>
+    </div>
+    <!-- <el-timeline>
       <el-timeline-item
         :timestamp="item.timedate"
         placement="top"
@@ -13,7 +16,7 @@
           <div v-html="item.main" class="main"></div>
         </el-card>
       </el-timeline-item>
-    </el-timeline>
+    </el-timeline> -->
     <!-- <el-pagination
       background
       :current-page="currentPage"
@@ -28,6 +31,8 @@
 
 <script>
 import * as echarts from "echarts";
+import moment from "moment";
+import "moment/locale/zh-cn";
 export default {
   data() {
     return {
@@ -37,12 +42,13 @@ export default {
       total: 1,
       pageSize: 10,
       loading: false,
+      day: {},
     };
   },
-  computed:{
-    mylist(){
-      return this.list.filter(item=>item.main)
-    }
+  computed: {
+    mylist() {
+      return this.list.filter((item) => item.main);
+    },
   },
   created() {
     this.getData();
@@ -170,12 +176,76 @@ export default {
           this.loading = false;
           this.moreList = res.list;
           this.total = res.total;
+          console.log(res.list);
+          this.getStatistical(res.list);
           this.list = res.list.slice(
             (this.currentPage - 1) * this.pageSize,
             this.currentPage * this.pageSize
           );
           this.drawLine();
         });
+    },
+    getStatistical(val) {
+      val.forEach((item) => {
+        let type = moment(item.timedate, "YYYY-MM-DD HH:mm:ss").format("dddd");
+        this.day[type] === undefined ? (this.day[type] = 1) : this.day[type]++;
+      });
+      const data = this.day;
+      console.log(data);
+      let myChart = echarts.init(this.$refs.category);
+      myChart.setOption({
+        tooltip: {
+          trigger: "axis",
+          axisPointer: {
+            // 坐标轴指示器，坐标轴触发有效
+            type: "shadow", // 默认为直线，可选为：'line' | 'shadow'
+          },
+        },
+        grid: {
+          left: "3%",
+          right: "4%",
+          bottom: "3%",
+          containLabel: true,
+        },
+        xAxis: [
+          {
+            type: "category",
+            data: [
+              "星期一",
+              "星期二",
+              "星期三",
+              "星期四",
+              "星期五",
+              "星期六",
+              "星期日",
+            ],
+            axisTick: {
+              alignWithLabel: true,
+            },
+          },
+        ],
+        yAxis: [
+          {
+            type: "value",
+          },
+        ],
+        series: [
+          {
+            name: "锻炼次数",
+            type: "bar",
+            barWidth: "60%",
+            data: [
+              data["星期一"],
+              data["星期二"],
+              data["星期三"],
+              data["星期四"],
+              data["星期五"],
+              data["星期六"],
+              data["星期日"],
+            ],
+          },
+        ],
+      });
     },
     handleCurrentChange(val) {
       this.loading = true;
@@ -195,14 +265,29 @@ export default {
 
 <style scoped>
 .my-card {
-  padding: 20px;
+  padding: 1.25rem;
 }
 .my-card div {
   color: #666666;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .main {
-  font-size: 12px !important;
+  font-size: 0.7rem !important;
+}
+.myCharts {
+  width: 100%;
+  height: 20rem;
+}
+.category {
+  width: 100%;
+  height: 20rem;
+}
+@media screen and (max-width: 768px) {
+  .myCharts {
+    transform: rotate(90deg);
+    width: 100%;
+    height: 18.75rem;
+  }
 }
 </style>

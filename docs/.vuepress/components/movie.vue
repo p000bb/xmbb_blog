@@ -3,7 +3,12 @@
     <!-- <h2>电影时间</h2> -->
     <Content slot-key="tip" />
     <ul v-loading="loading">
-      <li v-for="(item, index) in movieList" class="movieLi" :key="index" :class="item.solo && 'solo'">
+      <li
+        v-for="(item, index) in movieList"
+        class="movieLi"
+        :key="index"
+        :class="item.solo && 'solo'"
+      >
         <div style="display: flex" v-if="!isMobile">
           <div style="margin-right: 1.5rem">
             <el-image
@@ -33,8 +38,8 @@
               </div>
               <div class="tags">
                 <span>城市：</span>
-                <span>{{item.city}}</span>
-            </div>
+                <span>{{ item.city }}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -65,6 +70,10 @@
                     :score-template="item.rank"
                   >
                   </el-rate>
+                  <div class="tags">
+                    <span>城市：</span>
+                    <span>{{ item.city }}</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -97,7 +106,7 @@ export default {
       pageSize: 10,
       loading: false,
       isMobile: false,
-      windows:null,
+      windows: null,
     };
   },
   created() {
@@ -108,8 +117,8 @@ export default {
     );
     this.total = movieList.length;
   },
-  mounted(){
-    this.windows = window
+  mounted() {
+    this.windows = window;
   },
   methods: {
     goDouban(url) {
@@ -194,22 +203,22 @@ export default {
 i {
   margin-right: 0.5rem;
 }
-.solo{
+.solo {
   background: #004eff2e;
 }
 @media screen and (max-width: 768px) {
   .movie_img {
-    height: 100px;
-    width: 75px;
+    height: 6.25rem;
+    width: 4.6875rem;
     object-fit: contain;
   }
 
   .movieInfo {
     font-size: 1rem;
     line-height: 1.6rem;
-    padding: 5px;
-    margin-bottom: 5px;
-    min-height: 60px;
+    padding: 0.3125rem;
+    margin-bottom: 0.3125rem;
+    min-height: 3.75rem;
   }
 
   .tags {
@@ -219,7 +228,7 @@ i {
   }
 
   .page-info {
-    padding: 0 5px;
+    padding: 0 0.3125rem;
     color: #a5a5a5;
     display: block;
     align-items: center;
