@@ -176,7 +176,6 @@ export default {
           this.loading = false;
           this.moreList = res.list;
           this.total = res.total;
-          console.log(res.list);
           this.getStatistical(res.list);
           this.list = res.list.slice(
             (this.currentPage - 1) * this.pageSize,
@@ -191,7 +190,6 @@ export default {
         this.day[type] === undefined ? (this.day[type] = 1) : this.day[type]++;
       });
       const data = this.day;
-      console.log(data);
       let myChart = echarts.init(this.$refs.category);
       myChart.setOption({
         tooltip: {
@@ -289,5 +287,9 @@ export default {
     width: 100%;
     height: 18.75rem;
   }
+  .category {
+  width: 100%;
+  height: 18.75rem;
+}
 }
 </style>
