@@ -4,6 +4,9 @@
     <div style="margin-top: 2rem">
       <div ref="category" class="category"></div>
     </div>
+    <div style="margin-top: 2rem">
+      <div ref="category1" class="category1"></div>
+    </div>
     <!-- <el-timeline>
       <el-timeline-item
         :timestamp="item.timedate"
@@ -77,6 +80,15 @@ export default {
       return this.moreList
         .filter((item) => item.anaerobic_type == val)
         .map((item) => [item.timedate.split(" ")[0], item.anaerobic_type]);
+    },
+    filterBar(val) {
+      let sum = 0;
+      this.moreList
+        .filter((item) => item.anaerobic_type == val)
+        .forEach(() => {
+          sum++;
+        });
+      return sum;
     },
     drawLine() {
       // 基于准备好的dom，初始化echarts实例
@@ -176,7 +188,9 @@ export default {
           this.loading = false;
           this.moreList = res.list;
           this.total = res.total;
-          this.getStatistical(res.list);
+          this.getStatistical1(res.list);
+          this.getStatistical2();
+          console.log(res.list, 123);
           this.list = res.list.slice(
             (this.currentPage - 1) * this.pageSize,
             this.currentPage * this.pageSize
@@ -184,7 +198,7 @@ export default {
           this.drawLine();
         });
     },
-    getStatistical(val) {
+    getStatistical1(val) {
       val.forEach((item) => {
         let type = moment(item.timedate, "YYYY-MM-DD HH:mm:ss").format("dddd");
         this.day[type] === undefined ? (this.day[type] = 1) : this.day[type]++;
@@ -245,6 +259,54 @@ export default {
         ],
       });
     },
+    getStatistical2() {
+      console.log(this.filterData(1), 333);
+      let myChart = echarts.init(this.$refs.category1);
+      myChart.setOption({
+        tooltip: {
+          trigger: "axis",
+          axisPointer: {
+            // 坐标轴指示器，坐标轴触发有效
+            type: "shadow", // 默认为直线，可选为：'line' | 'shadow'
+          },
+        },
+        grid: {
+          left: "3%",
+          right: "4%",
+          bottom: "3%",
+          containLabel: true,
+        },
+        xAxis: [
+          {
+            type: "category",
+            data: ["胸", "背", "肩", "手臂", "腿", "有氧"],
+            axisTick: {
+              alignWithLabel: true,
+            },
+          },
+        ],
+        yAxis: [
+          {
+            type: "value",
+          },
+        ],
+        series: [
+          {
+            name: "锻炼次数",
+            type: "bar",
+            barWidth: "60%",
+            data: [
+              this.filterBar(1),
+              this.filterBar(2),
+              this.filterBar(3),
+              this.filterBar(4),
+              this.filterBar(5),
+              this.filterBar(6),
+            ],
+          },
+        ],
+      });
+    },
     handleCurrentChange(val) {
       this.loading = true;
       setTimeout(() => {
@@ -277,7 +339,8 @@ export default {
   width: 100%;
   height: 20rem;
 }
-.category {
+.category,
+.category1 {
   width: 100%;
   height: 20rem;
 }
@@ -287,9 +350,15 @@ export default {
     width: 100%;
     height: 18.75rem;
   }
-  .category {
-  width: 100%;
-  height: 18.75rem;
-}
+  .category,
+  .category1 {
+    transform: rotate(90deg);
+    width: 100%;
+    height: 18.75rem;
+    margin-top:20rem!important;
+  }
+  .category1{
+    margin-bottom:5rem;
+  }
 }
 </style>
