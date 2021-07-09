@@ -2,74 +2,48 @@
   <div class="movie">
     <!-- <h2>电影时间</h2> -->
     <Content slot-key="tip" />
+    <el-tabs v-model="activeName" @tab-click="handleClick">
+      <el-tab-pane label="时间排序" name="time"></el-tab-pane>
+      <el-tab-pane label="评分排序" name="rank"></el-tab-pane>
+    </el-tabs>
     <ul v-loading="loading">
-      <li
-        v-for="(item, index) in movieList"
-        class="movieLi"
-        :key="index"
-        :class="item.solo && 'solo'"
-      >
-        <div style="display: flex" v-if="!isMobile">
-          <div style="margin-right: 1.5rem">
-            <el-image
-              :key="item.img"
-              :src="item.img"
-              lazy
-              class="movie_img"
-            ></el-image>
-          </div>
-          <div style="width: 100%">
-            <h2 class="title" @click="goDouban(item.url)">{{ item.title }}</h2>
-            <div class="movieInfo" v-html="item.comment"></div>
-            <div class="page-info">
-              <div class="tags">
-                <i class="el-icon-timer"></i>{{ item.time }}
+      <el-timeline>
+        <el-timeline-item
+          :timestamp="item.time"
+          placement="top"
+          v-for="(item, index) in movieList"
+          :key="index"
+        >
+          <li class="movieLi" :class="item.solo && 'solo'">
+            <div style="display: flex" v-if="!isMobile">
+              <div style="margin-right: 1.5rem">
+                <el-image
+                  :key="item.img"
+                  :src="item.img"
+                  lazy
+                  class="movie_img"
+                ></el-image>
               </div>
-              <div class="tags">
-                <span>个人评分：</span>
-                <el-rate
-                  :value="item.rank / 2"
-                  disabled
-                  show-score
-                  text-color="#ff9900"
-                  :score-template="item.rank"
-                >
-                </el-rate>
-              </div>
-              <div class="tags">
-                <span>城市：</span>
-                <span>{{ item.city }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div v-else>
-          <h2 class="title" @click="goDouban(item.url)">{{ item.title }}</h2>
-          <div style="display: flex">
-            <div style="margin-right: 1.5rem">
-              <el-image
-                :key="item.img"
-                :src="item.img"
-                lazy
-                class="movie_img"
-              ></el-image>
-            </div>
-            <div>
-              <div class="movieInfo" v-html="item.comment"></div>
-              <div class="page-info">
-                <div class="tags">
-                  <i class="el-icon-timer"></i>{{ item.time }}
-                </div>
-                <div class="tags">
-                  <span style="margin-right: 1rem">个人评分:</span>
-                  <el-rate
-                    :value="item.rank / 2"
-                    disabled
-                    show-score
-                    text-color="#ff9900"
-                    :score-template="item.rank"
-                  >
-                  </el-rate>
+              <div style="width: 100%">
+                <h2 class="title" @click="goDouban(item.url)">
+                  {{ item.title }}
+                </h2>
+                <div class="movieInfo" v-html="item.comment"></div>
+                <div class="page-info">
+                  <div class="tags">
+                    <i class="el-icon-timer"></i>{{ item.time }}
+                  </div>
+                  <div class="tags">
+                    <span>个人评分：</span>
+                    <el-rate
+                      :value="item.rank / 2"
+                      disabled
+                      show-score
+                      text-color="#ff9900"
+                      :score-template="item.rank"
+                    >
+                    </el-rate>
+                  </div>
                   <div class="tags">
                     <span>城市：</span>
                     <span>{{ item.city }}</span>
@@ -77,9 +51,47 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </li>
+            <div v-else>
+              <h2 class="title" @click="goDouban(item.url)">
+                {{ item.title }}
+              </h2>
+              <div style="display: flex">
+                <div style="margin-right: 1.5rem">
+                  <el-image
+                    :key="item.img"
+                    :src="item.img"
+                    lazy
+                    class="movie_img"
+                  ></el-image>
+                </div>
+                <div>
+                  <div class="movieInfo" v-html="item.comment"></div>
+                  <div class="page-info">
+                    <div class="tags">
+                      <i class="el-icon-timer"></i>{{ item.time }}
+                    </div>
+                    <div class="tags">
+                      <span style="margin-right: 1rem">个人评分:</span>
+                      <el-rate
+                        :value="item.rank / 2"
+                        disabled
+                        show-score
+                        text-color="#ff9900"
+                        :score-template="item.rank"
+                      >
+                      </el-rate>
+                      <div class="tags">
+                        <span>城市：</span>
+                        <span>{{ item.city }}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </el-timeline-item>
+      </el-timeline>
     </ul>
     <el-pagination
       background
@@ -107,6 +119,8 @@ export default {
       loading: false,
       isMobile: false,
       windows: null,
+      activeName: "time",
+      newArray:[]
     };
   },
   created() {
@@ -129,12 +143,29 @@ export default {
       setTimeout(() => {
         this.currentPage = val;
         this.windows.scrollTo(0, 0);
-        this.movieList = movieList.slice(
+        this.movieList = this.newArray.slice(
           (this.currentPage - 1) * this.pageSize,
           this.currentPage * this.pageSize
         );
         this.loading = false;
-      }, 1000);
+      }, 500);
+    },
+    handleClick() {
+      const data = JSON.parse(JSON.stringify(movieList))
+      switch (this.activeName) {
+        case "time":
+          this.newArray = data;
+          break;
+        case "rank":
+          this.newArray = data.sort((a, b) => {
+            return Number(b.rank) - Number(a.rank);
+          });
+          break;
+      }
+      this.movieList = this.newArray.slice(
+        (this.currentPage - 1) * this.pageSize,
+        this.currentPage * this.pageSize
+      );
     },
   },
 };

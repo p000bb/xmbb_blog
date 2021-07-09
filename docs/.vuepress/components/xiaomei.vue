@@ -21,12 +21,15 @@ export default {
     return {
       urls: urlList,
       width: undefined,
+      first:false
     };
   },
   mounted() {
     if (typeof window !== "undefined") {
       const flex = document.querySelector(".my-top");
-      this.getWidth(flex);
+      this.$nextTick(() => {
+        this.getWidth(flex);
+      });
       const body = document.querySelector(".theme-reco-content");
       body.style.maxWidth = "100%";
       window.onresize = () => {
@@ -38,9 +41,10 @@ export default {
   },
   methods: {
     getWidth(flex) {
-      const flexWidth = flex.clientWidth - 200;
+      const flexWidth = this.first?flex.clientWidth - 200:flex.clientWidth;
       const num = Math.floor(flexWidth / 400); //  最多几个
       this.width = `width:${flexWidth / num}px`;
+      this.first = true;
     },
   },
 };
