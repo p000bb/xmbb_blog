@@ -120,7 +120,7 @@ export default {
       isMobile: false,
       windows: null,
       activeName: "time",
-      newArray:[]
+      newArray: JSON.parse(JSON.stringify(movieList)),
     };
   },
   created() {
@@ -151,7 +151,8 @@ export default {
       }, 500);
     },
     handleClick() {
-      const data = JSON.parse(JSON.stringify(movieList))
+      this.currentPage = 1;
+      const data = JSON.parse(JSON.stringify(movieList));
       switch (this.activeName) {
         case "time":
           this.newArray = data;
