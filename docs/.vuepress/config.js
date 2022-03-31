@@ -2,6 +2,9 @@ const nav = require('./config/nav.js');
 const sidebar = require('./config/sidebar.js');
 const plugins = require('./config/plugins.js');
 module.exports = {
+	chainWebpack(config) {
+		config.resolve.alias.set('core-js/library/fn', 'core-js/features');
+	},
 	title: '熊猫宝宝',
 	description: '欢迎来到90后快乐肥宅熊猫宝宝的个人博客😄😄😄',
 	markdown: {
