@@ -14,7 +14,7 @@ module.exports = {
 		['link', { rel: 'icon', href: '/favicon.ico' }],
 		['meta', { name: 'referrer', content: 'no-referrer' }],
 	],
-	base: process.env.NODE_ENV === 'production' ? '/' : '/',
+	base: process.env.NODE_ENV === 'production' ? '/xmbb_blog/' : '/',
 	theme: 'reco',
 	themeConfig: {
 		logo: '/assets/img/logo.jpg',
